@@ -65,5 +65,5 @@
 
 ---
 
-**Author**: [DEM-YU](https://github.com/DEM-YU)  
+**Author**: [Brooks Yu](https://github.com/DEM-YU)  
 **Project Created via Vibe Coding** 🚀
