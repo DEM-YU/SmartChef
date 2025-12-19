@@ -23,7 +23,7 @@
 * **完全响应式设计**：无论是在电脑显示器还是手机屏幕上，都能获得极佳的交互体验。
 
 ## 📸 界面预览
-*(温馨提示：在仓库上传一张名为 `screenshot.png` 的截图，这里就会自动显示哦！)*
+
 ![SmartChef Preview](https://raw.githubusercontent.com/DEM-YU/SmartChef/main/screenshot.png)
 
 ---
