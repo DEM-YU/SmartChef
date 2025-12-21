@@ -19,21 +19,27 @@ def get_recommendations(user_ingredients):
     return can_cook, missing_one
 
 def call_ai_chef(ingredients):
-    """2025 专用版：避开 0 配额，锁定 Flash 路径"""
+    """2025 年 12 月专用：锁定截图推荐的 Gemini 3 Flash"""
     api_key = st.secrets.get("GEMINI_API_KEY")
-    if not api_key: return "⚠️ 未配置 API Key"
+    if not api_key:
+        return "⚠️ Secrets 中未配置 API Key"
 
     try:
-        # 使用你截图中的 Client 语法
+        # 使用你截图中的 2025 最新 Client 语法
         client = genai.Client(api_key=api_key)
-        prompt = f"你是大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和做法。"
+        prompt = f"你是创意大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和步骤。"
         
-        # 强制使用 gemini-1.5-flash。
-        # 报错显示你的 gemini-3-pro 配额是 0，而 1.5 系列通常有免费额度。
+        # 核心修改：使用截图“What's new”里明确标出的模型名
         response = client.models.generate_content(
-            model="gemini-1.5-flash", 
+            model="gemini-3-flash", 
             contents=prompt
         )
-        return response.text
+        
+        if response and response.text:
+            return response.text
+        return "❌ AI 响应为空，请稍后重试。"
+
     except Exception as e:
-        return f"❌ 2025 接口访问失败: {str(e)}"
+        error_msg = str(e)
+        # 如果 3-flash 也报 404，尝试去掉 'models/' 前缀或使用截图里的预览版
+        return f"❌ 2025 接口访问失败: {error_msg}"
