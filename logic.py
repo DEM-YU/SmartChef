@@ -19,27 +19,37 @@ def get_recommendations(user_ingredients):
     return can_cook, missing_one
 
 def call_ai_chef(ingredients):
-    """2025 年 12 月专用：锁定截图推荐的 Gemini 3 Flash"""
+    """2025 年末版：自动探测可用模型，解决 404 和 429 报错"""
     api_key = st.secrets.get("GEMINI_API_KEY")
     if not api_key:
         return "⚠️ Secrets 中未配置 API Key"
 
     try:
-        # 使用你截图中的 2025 最新 Client 语法
+        # 使用你截图中的 2025 最新 SDK 语法
         client = genai.Client(api_key=api_key)
         prompt = f"你是创意大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和步骤。"
         
-        # 核心修改：使用截图“What's new”里明确标出的模型名
-        response = client.models.generate_content(
-            model="gemini-3-flash", 
-            contents=prompt
-        )
+        # 2025 年模型尝试列表（去掉了 'models/' 前缀，这是新版 SDK 的标准格式）
+        #
+        model_list = [
+            "gemini-2.0-flash",       # 2025 年最稳、配额最多的免费层级模型
+            "gemini-1.5-flash",       # 经典极速模型
+            "gemini-3-pro-preview"    # 你截图示例中的最新模型
+        ]
         
-        if response and response.text:
-            return response.text
-        return "❌ AI 响应为空，请稍后重试。"
+        for m_name in model_list:
+            try:
+                response = client.models.generate_content(
+                    model=m_name, 
+                    contents=prompt
+                )
+                if response and response.text:
+                    return response.text
+            except Exception as e:
+                # 如果当前模型报 404 或 429，立即切换下一个
+                continue
+                
+        return "❌ 2025 年所有可用模型均无法访问，请检查 Google AI Studio 的配额状态。"
 
     except Exception as e:
-        error_msg = str(e)
-        # 如果 3-flash 也报 404，尝试去掉 'models/' 前缀或使用截图里的预览版
-        return f"❌ 2025 接口访问失败: {error_msg}"
+        return f"❌ 2025 接口访问失败: {str(e)}"
