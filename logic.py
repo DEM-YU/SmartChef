@@ -1,75 +1,39 @@
 import json
 import os
 import streamlit as st
-from google import genai # 2025 版 SDK 引用
+from google import genai # 2025 版最新引用
 
 def get_recommendations(user_ingredients):
-    """本地数据库匹配逻辑"""
-    # 1. 必须在函数开头就初始化变量，防止 NameError
-    can_cook = []
-    missing_one = []
-    
+    """本地匹配逻辑（保持不变）"""
+    can_cook, missing_one = [], []
     try:
-        # 确保 recipes.json 路径正确
         with open('recipes.json', 'r', encoding='utf-8') as f:
             recipes = json.load(f)
-    except Exception:
-        # 如果找不到文件或读取失败，直接返回空列表
-        return [], []
-
-    # 2. 处理用户食材
-    user_set = set([str(i).strip() for i in user_ingredients])
-
-    # 3. 循环匹配
-    for recipe in recipes:
-        # 兼容你的 JSON 对象格式
-        extracted = []
-        for ing in recipe.get('ingredients', []):
-            if isinstance(ing, dict):
-                extracted.append(ing.get('name', '').strip())
-            else:
-                extracted.append(str(ing).strip())
-        
-        recipe_set = set(extracted)
-        actual_missing = recipe_set - user_set
-        
-        if len(actual_missing) == 0:
-            can_cook.append(recipe)
-        elif len(actual_missing) == 1:
-            missing_one.append({
-                "recipe": recipe, 
-                "missing": list(actual_missing)[0]
-            })
-            
+        user_set = set([str(i).strip() for i in user_ingredients])
+        for r in recipes:
+            extracted = [i.get('name','').strip() if isinstance(i,dict) else str(i).strip() for i in r.get('ingredients',[])]
+            actual_missing = set(extracted) - user_set
+            if not actual_missing: can_cook.append(r)
+            elif len(actual_missing) == 1: missing_one.append({"recipe": r, "missing": list(actual_missing)[0]})
+    except: pass
     return can_cook, missing_one
 
 def call_ai_chef(ingredients):
-    """2025 年专供版：避开 0 配额模型，直达 Flash 接口"""
+    """2025 专用版：避开 0 配额，锁定 Flash 路径"""
     api_key = st.secrets.get("GEMINI_API_KEY")
-    if not api_key:
-        return "⚠️ Secrets 中未配置 API Key"
+    if not api_key: return "⚠️ 未配置 API Key"
 
     try:
-        # 按照 2025 年最新 SDK 语法初始化
+        # 使用你截图中的 Client 语法
         client = genai.Client(api_key=api_key)
-        prompt = f"你是大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和步骤。"
+        prompt = f"你是大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和做法。"
         
-        # 【核心修改】在 2025 年，免费层级最稳的模型是 1.5-flash 和 2.0-flash
-        # 我们绝不尝试 gemini-3-pro，因为你的账号显示其 limit 为 0
-        available_models = ["gemini-1.5-flash", "gemini-2.0-flash"]
-        
-        for m_name in available_models:
-            try:
-                response = client.models.generate_content(
-                    model=m_name, 
-                    contents=prompt
-                )
-                if response and response.text:
-                    return response.text
-            except Exception:
-                continue # 如果 1.5 报错，立即换 2.0
-                
-        return "❌ 2025 Flash 模型配额也已耗尽，请检查 Google AI Studio 的 Usage 页面。"
-        
+        # 强制使用 gemini-1.5-flash。
+        # 报错显示你的 gemini-3-pro 配额是 0，而 1.5 系列通常有免费额度。
+        response = client.models.generate_content(
+            model="gemini-1.5-flash", 
+            contents=prompt
+        )
+        return response.text
     except Exception as e:
-        return f"❌ 2025 客户端启动失败: {str(e)}"
+        return f"❌ 2025 接口访问失败: {str(e)}"
