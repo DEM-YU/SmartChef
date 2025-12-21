@@ -1,33 +1,40 @@
 import streamlit as st
-from logic import get_smart_recommendations, get_all_ingredients_from_data
+from logic import get_smart_recommendations, get_categorized_ingredients
 
-st.set_page_config(page_title="SmartChef 2.0 智能版", page_icon="🍲", layout="wide")
+st.set_page_config(page_title="SmartChef 3.0 专业版", page_icon="👨‍🍳", layout="wide")
 
-# 侧边栏：动态提取 100 道菜的所有食材
-st.sidebar.header("🧊 我的冰箱里有...")
-available_ings = get_all_ingredients_from_data()
+# --- 侧边栏：分类食材选择 ---
+st.sidebar.header("🛒 准备食材")
+st.sidebar.markdown("请在下方分类中勾选您拥有的食材：")
 
-if available_ings:
-    selected_items = st.sidebar.multiselect(
-        "搜索并添加食材:", 
-        available_ings,
-        help="支持输入关键词搜索，如'肉'、'土豆'"
-    )
-    
-    match_btn = st.sidebar.button("🚀 开始智能匹配", use_container_width=True)
+categorized_data = get_categorized_ingredients()
+user_selections = []
+
+if categorized_data:
+    # 遍历每个分类，创建折叠选单
+    for cat_name, items in categorized_data.items():
+        if items: # 如果该分类下有食材
+            with st.sidebar.expander(cat_name, expanded=False):
+                # 在每个分类下使用 multiselect
+                picked = st.multiselect(f"选择{cat_name}", items, key=cat_name, label_visibility="collapsed")
+                user_selections.extend(picked)
+
+    st.sidebar.markdown("---")
+    match_btn = st.sidebar.button("🚀 寻找今日菜谱", use_container_width=True)
 else:
-    st.sidebar.error("请先确保 recipes.json 中有数据")
+    st.sidebar.error("数据加载失败，请检查 recipes.json")
     match_btn = False
 
-# 主界面显示
-st.title("🍲 SmartChef 智能匹配系统")
-st.markdown("---")
+# --- 主界面 ---
+st.title("👨‍🍳 SmartChef: 智能食材管家")
+if user_selections:
+    st.info(f"当前已选: {', '.join(user_selections)}")
 
 if match_btn:
-    if not selected_items:
+    if not user_selections:
         st.warning("大厨，请先在左侧选点食材吧！")
     else:
-        results = get_smart_recommendations(selected_items)
+        results = get_smart_recommendations(user_selections)
         
         if not results:
             st.error("抱歉，目前没有找到匹配的菜谱，换几种食材试试？")

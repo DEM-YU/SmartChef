@@ -1,22 +1,46 @@
 import json
 
-def get_all_ingredients_from_data():
+def get_categorized_ingredients():
     """
-    【动态提取】扫描 recipes.json 中所有菜谱，
-    提取出所有不重复的食材名称，供前端 multiselect 使用。
+    自动分类：从 recipes.json 提取食材并按类别分组
     """
-    all_ings = set()
+    # 定义分类关键字映射
+    categories_map = {
+        "🥩 肉类": ["肉", "排骨", "鸡", "鸭", "羊", "牛", "里脊", "五花", "火腿", "培根", "香肠"],
+        "🥬 蔬菜": ["菜", "土豆", "茄", "椒", "胡萝卜", "洋葱", "黄瓜", "木耳", "芹菜", "西兰花", "冬瓜", "丝瓜", "蘑菇", "菌", "笋"],
+        "🐟 海鲜": ["鱼", "虾", "鱿", "蟹", "海鲜"],
+        "🥚 蛋豆": ["蛋", "豆腐", "豆", "皮蛋"],
+        "🧂 调料/配料": ["盐", "油", "酱", "醋", "糖", "葱", "姜", "蒜", "辣椒", "花椒", "八角", "香叶", "孜然", "淀粉", "可乐", "啤酒", "九层塔"]
+    }
+    
+    categorized = {cat: [] for cat in categories_map.keys()}
+    categorized["其他"] = []
+    
     try:
         with open('recipes.json', 'r', encoding='utf-8') as f:
             recipes = json.load(f)
-            for recipe in recipes:
-                for ing in recipe.get('ingredients', []):
-                    # 自动提取每一个食材的名字并去重
+            all_ings = set()
+            for r in recipes:
+                for ing in r.get('ingredients', []):
                     all_ings.add(ing['name'].strip())
-        return sorted(list(all_ings)) # 返回排序后的列表
-    except Exception as e:
-        print(f"提取食材失败: {e}")
-        return []
+            
+            # 开始分拣
+            for ing_name in all_ings:
+                found = False
+                for cat, keywords in categories_map.items():
+                    if any(key in ing_name for key in keywords):
+                        categorized[cat].append(ing_name)
+                        found = True
+                        break
+                if not found:
+                    categorized["其他"].append(ing_name)
+                    
+        # 排序每一组
+        for cat in categorized:
+            categorized[cat] = sorted(categorized[cat])
+        return categorized
+    except Exception:
+        return {}
 
 def get_smart_recommendations(user_ingredients):
     """
