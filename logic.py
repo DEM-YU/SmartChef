@@ -48,15 +48,33 @@ def call_ai_chef(ingredients):
     if not api_key:
         return "⚠️ Secrets 中未配置 API Key"
 
+    # 定义 2025 年模型优先级列表
+    # 按照“最稳健且配额多”到“最新预览”的顺序排列
+    model_candidates = [
+        "gemini-2.0-flash",       # 2025 年最推荐的免费层级模型
+        "gemini-1.5-flash",       # 极速备选模型
+        "gemini-3-pro-preview"    # 你截图中的最新模型（但配额可能受限）
+    ]
+
     try:
+        # 使用 2025 年最新的 SDK 客户端
         client = genai.Client(api_key=api_key)
-        prompt = f"你是创意大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和步骤。"
+        prompt = f"你是一位创意大厨。我有这些食材：{', '.join(ingredients)}。请给一个创意菜名和简单步骤。"
         
-        # 核心修改：将 pro 换成 flash，免费额度更高
-        response = client.models.generate_content(
-            model="gemini-3-flash", 
-            contents=prompt
-        )
-        return response.text
+        last_error = ""
+        for model_name in model_candidates:
+            try:
+                response = client.models.generate_content(
+                    model=model_name, 
+                    contents=prompt
+                )
+                if response and response.text:
+                    return response.text
+            except Exception as e:
+                last_error = str(e)
+                continue # 如果当前模型 404 或 429，立即尝试下一个
+        
+        return f"❌ 所有可用模型均请求失败。最后一次报错: {last_error}"
+        
     except Exception as e:
-        return f"❌ 接口报错 (429 通常是配额用尽): {str(e)}"
+        return f"❌ 客户端初始化失败: {str(e)}"
