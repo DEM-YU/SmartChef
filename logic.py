@@ -2,19 +2,20 @@ import json
 
 def get_categorized_ingredients():
     """
-    自动分类：从 recipes.json 提取食材并按类别分组
+    【升级版】全覆盖分类逻辑：确保 50+ 菜谱中的每一个食材都有家可归。
     """
-    # 定义分类关键字映射
+    # 建立极其详尽的关键字映射
     categories_map = {
-        "🥩 肉类": ["肉", "排骨", "鸡", "鸭", "羊", "牛", "里脊", "五花", "火腿", "培根", "香肠"],
-        "🥬 蔬菜": ["菜", "土豆", "茄", "椒", "胡萝卜", "洋葱", "黄瓜", "木耳", "芹菜", "西兰花", "冬瓜", "丝瓜", "蘑菇", "菌", "笋"],
-        "🐟 海鲜": ["鱼", "虾", "鱿", "蟹", "海鲜"],
-        "🥚 蛋豆": ["蛋", "豆腐", "豆", "皮蛋"],
-        "🧂 调料/配料": ["盐", "油", "酱", "醋", "糖", "葱", "姜", "蒜", "辣椒", "花椒", "八角", "香叶", "孜然", "淀粉", "可乐", "啤酒", "九层塔"]
+        "🥩 肉类": ["肉", "排骨", "鸡", "鸭", "羊", "牛", "里脊", "五花", "瘦肉", "培根", "香肠", "火腿", "肝", "蹄"],
+        "🥬 蔬菜": ["菜", "土豆", "茄", "椒", "胡萝卜", "洋葱", "黄瓜", "苦瓜", "冬瓜", "丝瓜", "莲藕", "蒜苗", "蒜苔", "韭菜", "蘑菇", "菌", "笋", "芹菜", "西兰花", "百合", "豆芽", "木耳", "银耳", "西红柿", "番茄"],
+        "🐟 海鲜": ["鱼", "虾", "鱿", "蟹", "海鲜", "鲈鱼", "草鱼", "鲫鱼", "鱼片"],
+        "🍚 主食/粉面": ["米", "面", "粉", "面条", "意面", "通心粉", "红薯", "玉米", "淀粉"],
+        "🥚 蛋奶豆制品": ["蛋", "豆腐", "豆", "皮蛋", "腐竹", "香干", "奶", "黄油", "芝士"],
+        "🧂 调料/香料/其他": ["葱", "姜", "蒜", "辣椒", "花椒", "八角", "香叶", "孜然", "芝麻", "酱", "油", "盐", "醋", "糖", "蚝油", "生抽", "老抽", "豉油", "料酒", "咖喱", "黑胡椒", "可乐", "啤酒", "冰糖", "蜂蜜", "香菜", "九层塔", "枸杞", "红枣"]
     }
     
+    # 初始化分类容器
     categorized = {cat: [] for cat in categories_map.keys()}
-    categorized["其他"] = []
     
     try:
         with open('recipes.json', 'r', encoding='utf-8') as f:
@@ -24,7 +25,7 @@ def get_categorized_ingredients():
                 for ing in r.get('ingredients', []):
                     all_ings.add(ing['name'].strip())
             
-            # 开始分拣
+            # 核心分拣逻辑
             for ing_name in all_ings:
                 found = False
                 for cat, keywords in categories_map.items():
@@ -32,12 +33,15 @@ def get_categorized_ingredients():
                         categorized[cat].append(ing_name)
                         found = True
                         break
+                
+                # 如果依然没找到（保险措施），强行塞入“调料/其他”类，确保“其他”栏消失
                 if not found:
-                    categorized["其他"].append(ing_name)
+                    categorized["🧂 调料/香料/其他"].append(ing_name)
                     
-        # 排序每一组
+        # 组内排序
         for cat in categorized:
-            categorized[cat] = sorted(categorized[cat])
+            categorized[cat] = sorted(list(set(categorized[cat])))
+            
         return categorized
     except Exception:
         return {}
