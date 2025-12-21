@@ -44,25 +44,19 @@ def get_recommendations(user_ingredients):
     return can_cook, missing_one
 
 def call_ai_chef(ingredients):
-    """2025 版 Gemini 3 调用逻辑"""
-    # 从 Streamlit Cloud 的 Secrets 读取
     api_key = st.secrets.get("GEMINI_API_KEY")
-    
     if not api_key:
         return "⚠️ Secrets 中未配置 API Key"
 
     try:
-        # 按照 2025 年最新 SDK 初始化客户端
         client = genai.Client(api_key=api_key)
+        prompt = f"你是创意大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和步骤。"
         
-        prompt = f"你是一位大厨。我有这些食材：{', '.join(ingredients)}。请给我一个创意菜名和简单做法。"
-        
-        # 使用你截图中出现的 2025 预览版模型
+        # 核心修改：将 pro 换成 flash，免费额度更高
         response = client.models.generate_content(
-            model="gemini-3-pro-preview", 
+            model="gemini-3-flash", 
             contents=prompt
         )
-        
         return response.text
     except Exception as e:
-        return f"❌ 2025 接口请求失败: {str(e)}"
+        return f"❌ 接口报错 (429 通常是配额用尽): {str(e)}"
