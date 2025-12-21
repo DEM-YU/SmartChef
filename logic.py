@@ -49,17 +49,24 @@ def call_ai_chef(ingredients):
     if not api_key:
         return "⚠️ Secrets 中未配置 API Key"
     
-    # 尝试使用带 -latest 标签的名称，这通常能解决 404 路由问题
-    try:
-        model = genai.GenerativeModel('gemini-1.5-flash-latest')
-        prompt = f"你是一位大厨。我有这些食材：{', '.join(ingredients)}。请给我一个创意菜谱。"
-        response = model.generate_content(prompt)
-        return response.text
-    except Exception as e:
-        # 如果还是不行，尝试最基础的备选名
+    # 根据你 2025 年的后台截图，这些是现在最强的模型名称
+    model_names = [
+        'gemini-3-flash',          # 2025 最新的快手模型
+        'gemini-2.0-flash',        # 2025 的稳定版模型
+        'gemini-3-pro-preview'     # 你截图中出现的最新预览版
+    ]
+    
+    prompt = f"你是一位大厨。我有这些食材：{', '.join(ingredients)}。请给我一个创意菜名和简单做法。"
+    
+    for m_name in model_names:
         try:
-            model_alt = genai.GenerativeModel('gemini-pro')
-            response = model_alt.generate_content(prompt)
-            return response.text
-        except:
-            return f"❌ AI 仍然报错 (可能是库版本或账号限制): {str(e)}"
+            # 强制指定较新的模型名称
+            model = genai.GenerativeModel(m_name)
+            response = model.generate_content(prompt)
+            if response and response.text:
+                return response.text
+        except Exception as e:
+            # 如果报错，继续尝试下一个
+            continue
+            
+    return "❌ 2025 所有的模型请求都失败了。请检查 Google AI Studio 的 API 状态。"
