@@ -1,66 +1,41 @@
-# 👨‍🍳 SmartChef 4.0: 冰箱食材智能管家
+# 👨‍🍳 SmartChef 4.0 Pro: Intelligent Fridge Manager
 
-**SmartChef** 是一款基于 Python 和 Streamlit 开发的智能菜谱匹配应用。它专门为解决“冰箱里有食材却不知道吃什么”的痛点而设计，通过一套精密的本地加权匹配算法，为用户提供最科学的烹饪建议，无需依赖不稳定的外部 API。
-
----
-
-## 🌟 核心亮点 (Key Highlights)
-
-* **智能加权逻辑**：系统将食材严谨分为“核心主料”与“普通配料”，匹配度计算更贴合实际烹饪需求。
-* **核心缺失惩罚机制**：创新性地引入“主料缺失惩罚”，若缺失关键食材（如西红柿炒蛋缺鸡蛋），匹配得分将按 50% 的指数级下降，确保推荐结果的严肃性。
-* **非食用项智能过滤**：系统自动识别并静默处理“调料”与“工具”（如盐、酱油、牙签、保鲜膜等），这些项不占位、不扣分，极大地提升了用户体验。
-* **全自动化分类器**：基于 50+ 菜谱大数据，动态将数百种食材归类为肉类、蔬菜、海鲜等六大模块，支持侧边栏折叠检索。
-* **响应式视觉系统**：采用 Streamlit 原生进度条与 Markdown 彩色渲染，实时展示每道菜的匹配百分比。
+**SmartChef** is a Python-based intelligent recipe matching application built with Streamlit. It solves the "what should I cook?" dilemma by matching ingredients in your fridge with a database of 100+ recipes using a weighted scoring algorithm.
 
 ---
 
-## 🧠 核心算法逻辑 (Core Algorithm)
+## 🌟 Key Features
 
-### 1. 食材分级权重 (Weighting)
-* **主料 (Main)**: **4 分**（决定菜肴性质的食材，如猪肉、牛肉）。
-* **辅料 (Side)**: **1 分**（辅助口感的食材，如青椒、木耳）。
-
-### 2. 得分与惩罚公式 (Scoring)
-系统计算公式为：
-$$Score = \frac{\sum (匹配食材权重)}{\sum (总食材权重)} \times (0.5^{n})$$
-*(n 为缺失的主料数量)*。
-
-### 3. 基础设施过滤 (Infrastructure Filter)
-维护了一个包含 40+ 项的 `IGNORE_ITEMS` 库，包含葱姜蒜、酱醋盐、牙签、水等。这些项被自动归类为“自备调料/工具”，不再计入核心缺失名单。
+* **Weighted Matching Algorithm**: Categorizes ingredients into "Main" and "Side" to prioritize core proteins and vegetables.
+* **Core Missing Penalty**: Automatically penalizes recipes missing essential main ingredients, ensuring realistic cooking suggestions.
+* **Automated Categorization**: Scans the database to group ingredients into Meat, Veggies, Seafood, etc., for easy selection.
+* **Pantry Staple Filtering**: Intelligently ignores seasonings (salt, oil, pepper) and tools (toothpicks) in the selection process to reduce clutter.
+* **Dynamic Visuals**: Real-time progress bars and color-coded status (Green/Orange/Red) based on matching accuracy.
 
 ---
 
-## 🛠️ 技术架构 (Tech Stack)
+## 📂 Project Structure
 
-* **前端展示**: Streamlit (Python-based Web Framework)
-* **算法核心**: Python 3.x (Weighted Matching Logic)
-* **数据存储**: 结构化 JSON 数据库 (包含 50+ 经典菜谱)
-
----
-
-## 📂 文件说明 (Project Structure)
-
-* `app.py`: UI 渲染层，处理分类侧边栏与结果容器展示。
-* `logic.py`: 逻辑计算层，包含食材分拣、过滤与智能评分算法。
-* `recipes.json`: 数据持久层，存储所有菜谱的成分、步骤与属性。
-* `requirements.txt`: 环境依赖清单。
+* `app.py`: UI rendering and sidebar categorization.
+* `logic.py`: Core logic including the matching algorithm and pantry filters.
+* `recipes.json`: Structured database containing recipe metadata.
+* `requirements.txt`: Minimal dependencies for easy deployment.
 
 ---
 
-## 🚀 部署指南 (Deployment)
+## 🚀 Quick Start
 
-1.  **环境配置**:
+1.  **Install Dependencies**:
     ```bash
     pip install streamlit
     ```
-2.  **本地启动**:
+2.  **Run Application**:
     ```bash
     streamlit run app.py
     ```
-3.  **数据更新**:
-    直接在 `recipes.json` 中添加新的 JSON 块，系统将自动识别并更新食材分类。
 
 ---
 
-**开发者**: Brooks Yu (阿尔伯塔大学 CS 专业)
-**项目更新时间**: 2025年12月21日 06:16 (Edmonton)
+**Developer**: Brooks (Computer Science, University of Alberta)
+**Location**: Edmonton, Alberta, Canada
+**Last Updated**: Dec 21, 2025, 06:20 AM MST
