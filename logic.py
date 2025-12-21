@@ -1,39 +1,51 @@
 import json
 
-def get_recommendations(user_ingredients):
-    """纯本地匹配逻辑：100% 稳定，无需联网"""
-    can_cook = []
-    missing_one = []
-    
-    try:
-        # 读取本地 recipes.json
-        with open('recipes.json', 'r', encoding='utf-8') as f:
-            recipes = json.load(f)
-    except FileNotFoundError:
-        return [], []
-
-    # 处理用户选择的食材
+def get_smart_recommendations(user_ingredients):
+    """
+    智能加权匹配算法：
+    - 主料 (main): 4分
+    - 辅料 (side): 1分
+    """
+    recommendations = []
+    # 清理用户输入的空格
     user_set = set([str(i).strip() for i in user_ingredients])
 
-    for recipe in recipes:
-        # 适配你的字典格式 JSON
-        extracted_ingredients = []
-        for ing in recipe.get('ingredients', []):
-            if isinstance(ing, dict):
-                extracted_ingredients.append(ing.get('name', '').strip())
-            else:
-                extracted_ingredients.append(str(ing).strip())
-        
-        recipe_set = set(extracted_ingredients)
-        actual_missing = recipe_set - user_set
-        
-        # 逻辑：完全匹配或只差一样
-        if len(actual_missing) == 0:
-            can_cook.append(recipe)
-        elif len(actual_missing) == 1:
-            missing_one.append({
-                "recipe": recipe,
-                "missing": list(actual_missing)[0]
-            })
+    try:
+        with open('recipes.json', 'r', encoding='utf-8') as f:
+            recipes = json.load(f)
             
-    return can_cook, missing_one
+        for recipe in recipes:
+            total_weight = 0
+            match_weight = 0
+            missing_items = []
+            
+            # 处理菜谱中的每一个食材
+            for ing in recipe.get('ingredients', []):
+                # 设定权重：如果是主料给4分，辅料给1分
+                # 如果JSON里没写type，默认按主料处理
+                weight = 4 if ing.get('type') == 'main' else 1
+                total_weight += weight
+                
+                if ing['name'].strip() in user_set:
+                    match_weight += weight
+                else:
+                    missing_items.append(ing['name'])
+            
+            # 计算匹配百分比得分 (0-100)
+            score = int((match_weight / total_weight) * 100) if total_weight > 0 else 0
+            
+            # 只要得分大于 0，就显示（即便只中了一样辅料）
+            if score > 0:
+                recommendations.append({
+                    "recipe": recipe,
+                    "score": score,
+                    "missing": missing_items
+                })
+        
+        # 核心：按照分值从高到低排序，分高者排在最上面
+        recommendations.sort(key=lambda x: x['score'], reverse=True)
+        
+    except Exception as e:
+        print(f"读取数据失败: {e}")
+        
+    return recommendations
