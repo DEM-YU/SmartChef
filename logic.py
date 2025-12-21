@@ -44,37 +44,32 @@ def get_recommendations(user_ingredients):
     return can_cook, missing_one
 
 def call_ai_chef(ingredients):
-    """2025 版 Gemini 核心调用逻辑 - 避开零配额模型"""
+    """2025 年专供版：避开 0 配额模型，直达 Flash 接口"""
     api_key = st.secrets.get("GEMINI_API_KEY")
     if not api_key:
         return "⚠️ Secrets 中未配置 API Key"
 
-    # 重新排列优先级：将配额充足的 Flash 模型放在首位
-    # 报错显示 gemini-3-pro 的 limit 是 0，所以我们最后才尝试它
-    model_candidates = [
-        "gemini-1.5-flash",       # 2025 年最稳定的免费层级“劳模”
-        "gemini-2.0-flash",       # 性能平衡的备选模型
-        "gemini-3-pro-preview"    # 虽然最新，但你的账号当前配额为 0
-    ]
-
     try:
-        # 使用你截图中 2025 年最新的 SDK 语法
+        # 按照 2025 年最新 SDK 语法初始化
         client = genai.Client(api_key=api_key)
-        prompt = f"你是一位大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和步骤。"
+        prompt = f"你是大厨。食材：{', '.join(ingredients)}。请给一个创意菜名和步骤。"
         
-        for model_name in model_candidates:
+        # 【核心修改】在 2025 年，免费层级最稳的模型是 1.5-flash 和 2.0-flash
+        # 我们绝不尝试 gemini-3-pro，因为你的账号显示其 limit 为 0
+        available_models = ["gemini-1.5-flash", "gemini-2.0-flash"]
+        
+        for m_name in available_models:
             try:
                 response = client.models.generate_content(
-                    model=model_name, 
+                    model=m_name, 
                     contents=prompt
                 )
                 if response and response.text:
                     return response.text
-            except Exception as e:
-                # 如果当前模型报 429 或 404，立即跳过尝试下一个
-                continue
-        
-        return "❌ 2025 免费额度已耗尽。请确认 Google AI Studio 中 Flash 模型的配额状态。"
+            except Exception:
+                continue # 如果 1.5 报错，立即换 2.0
+                
+        return "❌ 2025 Flash 模型配额也已耗尽，请检查 Google AI Studio 的 Usage 页面。"
         
     except Exception as e:
-        return f"❌ 2025 接口初始化失败: {str(e)}"
+        return f"❌ 2025 客户端启动失败: {str(e)}"
