@@ -1,2494 +1,1171 @@
 [
     {
-        "name": "西红柿炒鸡蛋",
-        "difficulty": "简单",
+        "name": "Tomato and Scrambled Eggs",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "西红柿",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "食用油",
-                "type": "side"
-            }
+            { "name": "Tomato", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Cooking Oil", "type": "side" }
         ],
-        "instructions": "鸡蛋炒熟盛出，西红柿炒出汁，放入鸡蛋混合，加盐调味。"
+        "instructions": "Cook the scrambled eggs and set aside. Sauté tomatoes until juicy, then mix in the eggs and season with salt."
     },
     {
-        "name": "青椒肉丝",
-        "difficulty": "中等",
+        "name": "Shredded Pork with Green Peppers",
+        "difficulty": "Medium",
         "time": 15,
         "ingredients": [
-            {
-                "name": "猪肉",
-                "type": "main"
-            },
-            {
-                "name": "青椒",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            }
+            { "name": "Pork", "type": "main" },
+            { "name": "Green Pepper", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" }
         ],
-        "instructions": "猪肉切丝腌制，滑炒变色盛出；青椒炒断生，倒入肉丝和调料快炒。"
+        "instructions": "Julienne and marinate the pork, then stir-fry until the color changes and set aside. Sauté green peppers until tender, add the pork and seasonings, and flash fry."
     },
     {
-        "name": "土豆炖牛肉",
-        "difficulty": "困难",
+        "name": "Braised Beef with Potatoes",
+        "difficulty": "Hard",
         "time": 60,
         "ingredients": [
-            {
-                "name": "牛肉",
-                "type": "main"
-            },
-            {
-                "name": "土豆",
-                "type": "main"
-            },
-            {
-                "name": "胡萝卜",
-                "type": "side"
-            },
-            {
-                "name": "洋葱",
-                "type": "side"
-            },
-            {
-                "name": "八角",
-                "type": "side"
-            }
+            { "name": "Beef", "type": "main" },
+            { "name": "Potato", "type": "main" },
+            { "name": "Carrot", "type": "side" },
+            { "name": "Onion", "type": "side" },
+            { "name": "Star Anise", "type": "side" }
         ],
-        "instructions": "牛肉焯水后炖煮40分钟，加入土豆胡萝卜块继续炖20分钟至软烂。"
+        "instructions": "Blanch the beef and stew for 40 minutes. Add potato and carrot chunks and continue stewing for 20 minutes until tender."
     },
     {
-        "name": "麻婆豆腐",
-        "difficulty": "中等",
+        "name": "Mapo Tofu",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "豆腐",
-                "type": "main"
-            },
-            {
-                "name": "猪肉沫",
-                "type": "main"
-            },
-            {
-                "name": "花椒",
-                "type": "side"
-            },
-            {
-                "name": "郫县豆瓣酱",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            }
+            { "name": "Tofu", "type": "main" },
+            { "name": "Minced Pork", "type": "main" },
+            { "name": "Sichuan Peppercorn", "type": "side" },
+            { "name": "Pixian Bean Paste", "type": "side" },
+            { "name": "Scallion", "type": "side" }
         ],
-        "instructions": "肉沫炒酥，加豆瓣酱炒红油，加水下豆煮几分钟，勾芡撒花椒粉。"
+        "instructions": "Fry minced pork until crisp, add bean paste to create red oil. Add water and tofu, simmer for a few minutes, thicken with starch and sprinkle with peppercorn powder."
     },
     {
-        "name": "糖醋排骨",
-        "difficulty": "中等",
+        "name": "Sweet and Sour Pork Ribs",
+        "difficulty": "Medium",
         "time": 40,
         "ingredients": [
-            {
-                "name": "排骨",
-                "type": "main"
-            },
-            {
-                "name": "冰糖",
-                "type": "side"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "芝麻",
-                "type": "side"
-            }
+            { "name": "Pork Ribs", "type": "main" },
+            { "name": "Rock Sugar", "type": "side" },
+            { "name": "Vinegar", "type": "side" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Sesame Seeds", "type": "side" }
         ],
-        "instructions": "排骨焯水，炒糖色，加水和调料慢炖收汁，出锅撒芝麻。"
+        "instructions": "Blanch the ribs, caramelize the sugar, add water and seasonings to simmer until the sauce thickens. Sprinkle with sesame seeds before serving."
     },
     {
-        "name": "宫保鸡丁",
-        "difficulty": "中等",
+        "name": "Kung Pao Chicken",
+        "difficulty": "Medium",
         "time": 15,
         "ingredients": [
-            {
-                "name": "鸡胸肉",
-                "type": "main"
-            },
-            {
-                "name": "花生米",
-                "type": "main"
-            },
-            {
-                "name": "干辣椒",
-                "type": "side"
-            },
-            {
-                "name": "花椒",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            }
+            { "name": "Chicken Breast", "type": "main" },
+            { "name": "Peanuts", "type": "main" },
+            { "name": "Dried Chili", "type": "side" },
+            { "name": "Sichuan Peppercorn", "type": "side" },
+            { "name": "Scallion", "type": "side" }
         ],
-        "instructions": "鸡肉切丁腌制，爆香辣椒花椒，滑炒鸡肉，最后加入花生米颠勺。"
+        "instructions": "Dice and marinate the chicken. Sauté chili and peppercorns until fragrant, stir-fry the chicken, and finally toss in the peanuts."
     },
     {
-        "name": "酸辣土豆丝",
-        "difficulty": "简单",
+        "name": "Hot and Sour Shredded Potatoes",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "土豆",
-                "type": "main"
-            },
-            {
-                "name": "干辣椒",
-                "type": "side"
-            },
-            {
-                "name": "花椒",
-                "type": "side"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            }
+            { "name": "Potato", "type": "main" },
+            { "name": "Dried Chili", "type": "side" },
+            { "name": "Sichuan Peppercorn", "type": "side" },
+            { "name": "Vinegar", "type": "side" },
+            { "name": "Garlic", "type": "side" }
         ],
-        "instructions": "土豆切丝焯水或者直接爆炒，加入大量醋和辣椒，大火快炒保持脆爽。"
+        "instructions": "Julienne the potatoes and blanch (or sauté directly). Add plenty of vinegar and chili, stir-frying over high heat to keep them crunchy."
     },
     {
-        "name": "红烧肉",
-        "difficulty": "困难",
+        "name": "Braised Pork Belly",
+        "difficulty": "Hard",
         "time": 90,
         "ingredients": [
-            {
-                "name": "五花肉",
-                "type": "main"
-            },
-            {
-                "name": "冰糖",
-                "type": "side"
-            },
-            {
-                "name": "八角",
-                "type": "side"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "老抽",
-                "type": "side"
-            }
+            { "name": "Pork Belly", "type": "main" },
+            { "name": "Rock Sugar", "type": "side" },
+            { "name": "Star Anise", "type": "side" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Dark Soy Sauce", "type": "side" }
         ],
-        "instructions": "五花肉切块焯水，炒糖色，加香料小火慢炖1小时以上，大火收汁。"
+        "instructions": "Cut pork belly into chunks and blanch. Caramelize the sugar, add spices and simmer over low heat for over an hour, then reduce the sauce over high heat."
     },
     {
-        "name": "蒜蓉西兰花",
-        "difficulty": "简单",
+        "name": "Broccoli with Garlic",
+        "difficulty": "Simple",
         "time": 8,
         "ingredients": [
-            {
-                "name": "西兰花",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "鸡精",
-                "type": "side"
-            },
-            {
-                "name": "食用油",
-                "type": "side"
-            }
+            { "name": "Broccoli", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Chicken Powder", "type": "side" },
+            { "name": "Cooking Oil", "type": "side" }
         ],
-        "instructions": "西兰花焯水，爆香大量蒜末，倒入西兰花快速翻炒调味。"
+        "instructions": "Blanch the broccoli. Sauté plenty of minced garlic until fragrant, add broccoli, and stir-fry quickly with seasonings."
     },
     {
-        "name": "鱼香肉丝",
-        "difficulty": "中等",
+        "name": "Yuxiang Shredded Pork",
+        "difficulty": "Medium",
         "time": 15,
         "ingredients": [
-            {
-                "name": "猪肉",
-                "type": "main"
-            },
-            {
-                "name": "木耳",
-                "type": "side"
-            },
-            {
-                "name": "胡萝卜",
-                "type": "side"
-            },
-            {
-                "name": "泡椒",
-                "type": "side"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            }
+            { "name": "Pork", "type": "main" },
+            { "name": "Wood Ear Mushroom", "type": "side" },
+            { "name": "Carrot", "type": "side" },
+            { "name": "Pickled Chili", "type": "side" },
+            { "name": "Vinegar", "type": "side" }
         ],
-        "instructions": "肉丝滑熟，炒红泡椒，加入配菜，倒入鱼香汁（糖醋比例）快速翻炒。"
+        "instructions": "Stir-fry pork strips until cooked. Sauté pickled chili, add side ingredients, and pour in the Yuxiang sauce (sweet and sour ratio), stir-fry quickly."
     },
     {
-        "name": "可乐鸡翅",
-        "difficulty": "简单",
+        "name": "Coca-Cola Chicken Wings",
+        "difficulty": "Simple",
         "time": 25,
         "ingredients": [
-            {
-                "name": "鸡翅",
-                "type": "main"
-            },
-            {
-                "name": "可乐",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "料酒",
-                "type": "side"
-            },
-            {
-                "name": "酱油",
-                "type": "side"
-            }
+            { "name": "Chicken Wings", "type": "main" },
+            { "name": "Coca-Cola", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Shaoxing Wine", "type": "side" },
+            { "name": "Soy Sauce", "type": "side" }
         ],
-        "instructions": "鸡翅煎至两面金黄，倒入可乐没过鸡翅，中小火焖煮收汁。"
+        "instructions": "Pan-fry chicken wings until golden brown. Pour in cola until wings are covered, simmer over medium-low heat until the sauce reduces."
     },
     {
-        "name": "回锅肉",
-        "difficulty": "中等",
+        "name": "Twice-Cooked Pork",
+        "difficulty": "Medium",
         "time": 30,
         "ingredients": [
-            {
-                "name": "五花肉",
-                "type": "main"
-            },
-            {
-                "name": "蒜苗",
-                "type": "main"
-            },
-            {
-                "name": "郫县豆瓣酱",
-                "type": "side"
-            },
-            {
-                "name": "豆豉",
-                "type": "side"
-            },
-            {
-                "name": "白糖",
-                "type": "side"
-            }
+            { "name": "Pork Belly", "type": "main" },
+            { "name": "Garlic Sprouts", "type": "main" },
+            { "name": "Pixian Bean Paste", "type": "side" },
+            { "name": "Fermented Black Beans", "type": "side" },
+            { "name": "Sugar", "type": "side" }
         ],
-        "instructions": "五花肉煮至八成熟切片，爆炒出灯盏窝，加豆瓣酱和蒜苗翻炒。"
+        "instructions": "Boil pork belly until 80% cooked and slice. Stir-fry until slices curl, add bean paste and garlic sprouts, and toss well."
     },
     {
-        "name": "清蒸鲈鱼",
-        "difficulty": "中等",
+        "name": "Steamed Sea Bass",
+        "difficulty": "Medium",
         "time": 15,
         "ingredients": [
-            {
-                "name": "鲈鱼",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "蒸鱼豉油",
-                "type": "side"
-            },
-            {
-                "name": "食用油",
-                "type": "side"
-            }
+            { "name": "Sea Bass", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Steamed Fish Soy Sauce", "type": "side" },
+            { "name": "Cooking Oil", "type": "side" }
         ],
-        "instructions": "鱼身铺姜丝上汽蒸8-10分钟，倒掉汤汁，铺葱丝淋热油和豆豉油。"
+        "instructions": "Place ginger on the fish and steam for 8-10 minutes. Discard the liquid, top with scallions, and sizzle with hot oil and soy sauce."
     },
     {
-        "name": "地三鲜",
-        "difficulty": "中等",
+        "name": "Di San Xian (Sautéed Three Earthly Treasures)",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "土豆",
-                "type": "main"
-            },
-            {
-                "name": "茄子",
-                "type": "main"
-            },
-            {
-                "name": "青椒",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "酱油",
-                "type": "side"
-            }
+            { "name": "Potato", "type": "main" },
+            { "name": "Eggplant", "type": "main" },
+            { "name": "Green Pepper", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Soy Sauce", "type": "side" }
         ],
-        "instructions": "土豆茄子切块炸软，留底油爆香蒜末，三样食材合炒，加酱汁勾芡。"
+        "instructions": "Deep-fry potato and eggplant chunks until soft. Sauté garlic, combine all three ingredients, add sauce, and thicken with starch."
     },
     {
-        "name": "洋葱炒鸡蛋",
-        "difficulty": "简单",
+        "name": "Onion and Scrambled Eggs",
+        "difficulty": "Simple",
         "time": 8,
         "ingredients": [
-            {
-                "name": "洋葱",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "食用油",
-                "type": "side"
-            }
+            { "name": "Onion", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Cooking Oil", "type": "side" }
         ],
-        "instructions": "鸡蛋炒熟，洋葱大火炒香，混入鸡蛋同炒，加盐即可。"
+        "instructions": "Scramble the eggs. Sauté onions over high heat until fragrant, mix in the eggs, and season with salt."
     },
     {
-        "name": "凉拌黄瓜",
-        "difficulty": "简单",
+        "name": "Smashed Cucumber Salad",
+        "difficulty": "Simple",
         "time": 5,
         "ingredients": [
-            {
-                "name": "黄瓜",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            },
-            {
-                "name": "辣椒油",
-                "type": "side"
-            },
-            {
-                "name": "芝麻油",
-                "type": "side"
-            }
+            { "name": "Cucumber", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Vinegar", "type": "side" },
+            { "name": "Chili Oil", "type": "side" },
+            { "name": "Sesame Oil", "type": "side" }
         ],
-        "instructions": "黄瓜拍碎切段，加入蒜末和所有调料拌匀即可。"
+        "instructions": "Smash the cucumber and cut into chunks. Mix with minced garlic and all other seasonings."
     },
     {
-        "name": "芹菜炒香干",
-        "difficulty": "简单",
+        "name": "Stir-fried Celery with Smoked Tofu",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "芹菜",
-                "type": "main"
-            },
-            {
-                "name": "香干",
-                "type": "main"
-            },
-            {
-                "name": "红椒",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            }
+            { "name": "Celery", "type": "main" },
+            { "name": "Smoked Tofu", "type": "main" },
+            { "name": "Red Pepper", "type": "side" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" }
         ],
-        "instructions": "香干切条略煎，加入芹菜段大火翻炒断生，调味出锅。"
+        "instructions": "Slice and lightly fry the smoked tofu. Add celery segments, stir-fry over high heat until tender, season and serve."
     },
     {
-        "name": "虾仁蒸蛋",
-        "difficulty": "简单",
+        "name": "Steamed Egg Custard with Shrimp",
+        "difficulty": "Simple",
         "time": 15,
         "ingredients": [
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "虾仁",
-                "type": "main"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "温水",
-                "type": "side"
-            }
+            { "name": "Egg", "type": "main" },
+            { "name": "Shrimp", "type": "main" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Warm Water", "type": "side" }
         ],
-        "instructions": "蛋液加温水打匀过滤，蒸至半凝固时放入虾仁继续蒸熟，淋香油生抽。"
+        "instructions": "Whisk eggs with warm water and strain. Steam until semi-set, add shrimp and finish steaming. Drizzle with sesame oil and soy sauce."
     },
     {
-        "name": "葱爆羊肉",
-        "difficulty": "中等",
+        "name": "Sautéed Mutton with Scallions",
+        "difficulty": "Medium",
         "time": 10,
         "ingredients": [
-            {
-                "name": "羊肉卷",
-                "type": "main"
-            },
-            {
-                "name": "大葱",
-                "type": "main"
-            },
-            {
-                "name": "洋葱",
-                "type": "side"
-            },
-            {
-                "name": "孜然粉",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            }
+            { "name": "Sliced Mutton", "type": "main" },
+            { "name": "Large Scallion", "type": "main" },
+            { "name": "Onion", "type": "side" },
+            { "name": "Cumin Powder", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" }
         ],
-        "instructions": "大火热油，下羊肉卷快速滑散，放入大量葱段爆香，调味快炒出锅。"
+        "instructions": "Stir-fry mutton quickly over high heat. Add plenty of scallion segments, season, and flash fry before serving."
     },
     {
-        "name": "香煎豆腐",
-        "difficulty": "简单",
+        "name": "Pan-fried Tofu",
+        "difficulty": "Simple",
         "time": 12,
         "ingredients": [
-            {
-                "name": "老豆腐",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "蒜蓉辣酱",
-                "type": "side"
-            },
-            {
-                "name": "芝麻",
-                "type": "side"
-            }
+            { "name": "Firm Tofu", "type": "main" },
+            { "name": "Egg", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Garlic Chili Sauce", "type": "side" },
+            { "name": "Sesame Seeds", "type": "side" }
         ],
-        "instructions": "豆腐切块裹蛋液，煎至两面金黄，刷酱撒葱花芝麻。"
+        "instructions": "Coat tofu slices in egg wash and fry until golden on both sides. Brush with sauce and sprinkle with scallions and sesame seeds."
     },
     {
-        "name": "番茄牛腩",
-        "difficulty": "困难",
+        "name": "Beef Brisket with Tomato",
+        "difficulty": "Hard",
         "time": 90,
         "ingredients": [
-            {
-                "name": "牛腩",
-                "type": "main"
-            },
-            {
-                "name": "西红柿",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "番茄酱",
-                "type": "side"
-            },
-            {
-                "name": "香叶",
-                "type": "side"
-            }
+            { "name": "Beef Brisket", "type": "main" },
+            { "name": "Tomato", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Tomato Sauce", "type": "side" },
+            { "name": "Bay Leaf", "type": "side" }
         ],
-        "instructions": "牛腩焯水，西红柿炒化，加入牛肉和开水慢炖1.5小时。"
+        "instructions": "Blanch the brisket. Sauté tomatoes until they break down, add beef and boiling water, and simmer for 1.5 hours."
     },
     {
-        "name": "红烧茄子",
-        "difficulty": "中等",
+        "name": "Braised Eggplant",
+        "difficulty": "Medium",
         "time": 18,
         "ingredients": [
-            {
-                "name": "茄子",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "白糖",
-                "type": "side"
-            }
+            { "name": "Eggplant", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Sugar", "type": "side" }
         ],
-        "instructions": "茄子切滚刀块撒盐杀水，挤干后煎软，加调料红烧入味。"
+        "instructions": "Cut eggplant into chunks, salt them to draw out water, squeeze dry, and fry until soft. Braise with seasonings."
     },
     {
-        "name": "青椒炒蛋",
-        "difficulty": "简单",
+        "name": "Green Pepper and Scrambled Eggs",
+        "difficulty": "Simple",
         "time": 8,
         "ingredients": [
-            {
-                "name": "青椒",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Green Pepper", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "鸡蛋炒熟，青椒炒至断生，混合翻炒加盐。"
+        "instructions": "Cook the scrambled eggs. Sauté green peppers until tender, mix together and season with salt."
     },
     {
-        "name": "咖喱鸡肉饭",
-        "difficulty": "简单",
+        "name": "Chicken Curry Rice",
+        "difficulty": "Simple",
         "time": 25,
         "ingredients": [
-            {
-                "name": "鸡胸肉",
-                "type": "main"
-            },
-            {
-                "name": "土豆",
-                "type": "main"
-            },
-            {
-                "name": "胡萝卜",
-                "type": "main"
-            },
-            {
-                "name": "洋葱",
-                "type": "side"
-            },
-            {
-                "name": "咖喱块",
-                "type": "side"
-            }
+            { "name": "Chicken Breast", "type": "main" },
+            { "name": "Potato", "type": "main" },
+            { "name": "Carrot", "type": "main" },
+            { "name": "Onion", "type": "side" },
+            { "name": "Curry Roux", "type": "side" }
         ],
-        "instructions": "食材切块炒香，加水煮软土豆胡萝卜，关火放入咖喱块融化，开火收浓。"
+        "instructions": "Sauté diced ingredients, add water and boil until soft. Turn off heat, dissolve curry roux, then simmer until thickened."
     },
     {
-        "name": "黑椒牛柳",
-        "difficulty": "中等",
+        "name": "Black Pepper Beef Strips",
+        "difficulty": "Medium",
         "time": 15,
         "ingredients": [
-            {
-                "name": "牛里脊",
-                "type": "main"
-            },
-            {
-                "name": "洋葱",
-                "type": "side"
-            },
-            {
-                "name": "青椒",
-                "type": "side"
-            },
-            {
-                "name": "黑胡椒酱",
-                "type": "side"
-            },
-            {
-                "name": "黄油",
-                "type": "side"
-            }
+            { "name": "Beef Tenderloin", "type": "main" },
+            { "name": "Onion", "type": "side" },
+            { "name": "Green Pepper", "type": "side" },
+            { "name": "Black Pepper Sauce", "type": "side" },
+            { "name": "Butter", "type": "side" }
         ],
-        "instructions": "牛肉逆纹切条腌制，滑熟备用；炒香配菜，汇入牛肉和黑胡椒酱。"
+        "instructions": "Marinate beef strips and stir-fry until cooked. Sauté side vegetables, then combine with beef and black pepper sauce."
     },
     {
-        "name": "蚝油生菜",
-        "difficulty": "简单",
+        "name": "Lettuce with Oyster Sauce",
+        "difficulty": "Simple",
         "time": 5,
         "ingredients": [
-            {
-                "name": "生菜",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "蚝油",
-                "type": "side"
-            },
-            {
-                "name": "淀粉",
-                "type": "side"
-            },
-            {
-                "name": "白糖",
-                "type": "side"
-            }
+            { "name": "Lettuce", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Oyster Sauce", "type": "side" },
+            { "name": "Starch", "type": "side" },
+            { "name": "Sugar", "type": "side" }
         ],
-        "instructions": "生菜焯水10秒捞出沥干，锅中爆香蒜末加蚝油勾芡，淋在生菜上。"
+        "instructions": "Blanch lettuce for 10 seconds and drain. Sauté garlic, add oyster sauce and starch to make a glaze, and pour over lettuce."
     },
     {
-        "name": "干煸四季豆",
-        "difficulty": "中等",
+        "name": "Dry-fried Green Beans",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "四季豆",
-                "type": "main"
-            },
-            {
-                "name": "猪肉沫",
-                "type": "main"
-            },
-            {
-                "name": "干辣椒",
-                "type": "side"
-            },
-            {
-                "name": "花椒",
-                "type": "side"
-            },
-            {
-                "name": "芽菜",
-                "type": "side"
-            }
+            { "name": "Green Beans", "type": "main" },
+            { "name": "Minced Pork", "type": "main" },
+            { "name": "Dried Chili", "type": "side" },
+            { "name": "Sichuan Peppercorn", "type": "side" },
+            { "name": "Ya Cai (Preserved Veggie)", "type": "side" }
         ],
-        "instructions": "四季豆油炸至表皮起皱，倒出油，留底油炒肉沫芽菜辣椒，倒入四季豆干煸。"
+        "instructions": "Deep-fry beans until wrinkled. Sauté minced pork, preserved veggies, and chili, then toss in the beans to dry-fry."
     },
     {
-        "name": "木耳炒肉",
-        "difficulty": "简单",
+        "name": "Stir-fried Pork with Wood Ear Mushrooms",
+        "difficulty": "Simple",
         "time": 12,
         "ingredients": [
-            {
-                "name": "猪肉",
-                "type": "main"
-            },
-            {
-                "name": "木耳",
-                "type": "main"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            }
+            { "name": "Pork", "type": "main" },
+            { "name": "Wood Ear Mushroom", "type": "main" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" }
         ],
-        "instructions": "木耳泡发，肉片滑炒，放入木耳大火翻炒，调味即可。"
+        "instructions": "Soak mushrooms. Stir-fry pork slices, add mushrooms and sauté over high heat, season and serve."
     },
     {
-        "name": "意大利肉酱面",
-        "difficulty": "中等",
+        "name": "Spaghetti Bolognese",
+        "difficulty": "Medium",
         "time": 40,
         "ingredients": [
-            {
-                "name": "意大利面",
-                "type": "main"
-            },
-            {
-                "name": "牛肉沫",
-                "type": "main"
-            },
-            {
-                "name": "西红柿",
-                "type": "main"
-            },
-            {
-                "name": "洋葱",
-                "type": "side"
-            },
-            {
-                "name": "番茄酱",
-                "type": "side"
-            }
+            { "name": "Spaghetti", "type": "main" },
+            { "name": "Minced Beef", "type": "main" },
+            { "name": "Tomato", "type": "main" },
+            { "name": "Onion", "type": "side" },
+            { "name": "Tomato Paste", "type": "side" }
         ],
-        "instructions": "煮意面备用；洋葱肉沫炒香，加西红柿熬成浓酱，淋在面上。"
+        "instructions": "Boil pasta. Sauté onion and minced beef, add tomatoes to simmer into a thick sauce, and pour over the pasta."
     },
     {
-        "name": "清炒虾仁",
-        "difficulty": "简单",
+        "name": "Stir-fried Shrimp",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "虾仁",
-                "type": "main"
-            },
-            {
-                "name": "黄瓜",
-                "type": "side"
-            },
-            {
-                "name": "胡萝卜",
-                "type": "side"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "蛋清",
-                "type": "side"
-            }
+            { "name": "Shrimp", "type": "main" },
+            { "name": "Cucumber", "type": "side" },
+            { "name": "Carrot", "type": "side" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Egg White", "type": "side" }
         ],
-        "instructions": "虾仁上浆滑油变色，倒入配菜丁快速翻炒调盐。"
+        "instructions": "Velvet the shrimp and stir-fry until they change color. Add diced vegetables and flash fry with salt."
     },
     {
-        "name": "白灼虾",
-        "difficulty": "简单",
+        "name": "Boiled Shrimp (Bai Zhuo)",
+        "difficulty": "Simple",
         "time": 5,
         "ingredients": [
-            {
-                "name": "基围虾",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "料酒",
-                "type": "side"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            }
+            { "name": "Shrimp", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Shaoxing Wine", "type": "side" },
+            { "name": "Vinegar", "type": "side" }
         ],
-        "instructions": "水开加姜葱料酒，下入虾煮至变红弯曲立刻捞出，蘸料汁吃。"
+        "instructions": "Add ginger, scallion, and wine to boiling water. Boil shrimp until red and curled, then serve with dipping sauce."
     },
     {
-        "name": "红枣银耳汤",
-        "difficulty": "简单",
+        "name": "Snow Fungus Soup with Red Dates",
+        "difficulty": "Simple",
         "time": 60,
         "ingredients": [
-            {
-                "name": "银耳",
-                "type": "main"
-            },
-            {
-                "name": "红枣",
-                "type": "side"
-            },
-            {
-                "name": "枸杞",
-                "type": "side"
-            },
-            {
-                "name": "冰糖",
-                "type": "side"
-            }
+            { "name": "Snow Fungus", "type": "main" },
+            { "name": "Red Dates", "type": "side" },
+            { "name": "Goji Berries", "type": "side" },
+            { "name": "Rock Sugar", "type": "side" }
         ],
-        "instructions": "银耳泡发撕小块，加水煮出胶质，放入红枣枸杞冰糖再煮10分钟。"
+        "instructions": "Soak and tear snow fungus into small pieces. Boil until gelatinous, then add dates, berries, and sugar for 10 minutes."
     },
     {
-        "name": "煎牛排",
-        "difficulty": "中等",
+        "name": "Pan-seared Steak",
+        "difficulty": "Medium",
         "time": 10,
         "ingredients": [
-            {
-                "name": "牛排",
-                "type": "main"
-            },
-            {
-                "name": "海盐",
-                "type": "side"
-            },
-            {
-                "name": "黑胡椒",
-                "type": "side"
-            },
-            {
-                "name": "大蒜",
-                "type": "side"
-            },
-            {
-                "name": "迷迭香",
-                "type": "side"
-            }
+            { "name": "Steak", "type": "main" },
+            { "name": "Sea Salt", "type": "side" },
+            { "name": "Black Pepper", "type": "side" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Rosemary", "type": "side" }
         ],
-        "instructions": "牛排室温回温擦干，大火高温煎封表面，静置5分钟后切开。"
+        "instructions": "Bring steak to room temperature and pat dry. Sear over high heat, then let it rest for 5 minutes before slicing."
     },
     {
-        "name": "炒土豆片",
-        "difficulty": "简单",
+        "name": "Stir-fried Potato Slices",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "土豆",
-                "type": "main"
-            },
-            {
-                "name": "青椒",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            }
+            { "name": "Potato", "type": "main" },
+            { "name": "Green Pepper", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Garlic", "type": "side" }
         ],
-        "instructions": "土豆切片过水去淀粉，爆香蒜末，下土豆片炒至透明，加青椒调味。"
+        "instructions": "Slice potatoes and rinse off starch. Sauté garlic, stir-fry potatoes until translucent, add green peppers and season."
     },
     {
-        "name": "香菇滑鸡",
-        "difficulty": "中等",
+        "name": "Chicken with Shiitake Mushrooms",
+        "difficulty": "Medium",
         "time": 25,
         "ingredients": [
-            {
-                "name": "鸡腿肉",
-                "type": "main"
-            },
-            {
-                "name": "干香菇",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "蚝油",
-                "type": "side"
-            }
+            { "name": "Chicken Thigh", "type": "main" },
+            { "name": "Dried Shiitake", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Oyster Sauce", "type": "side" }
         ],
-        "instructions": "香菇泡发，鸡肉切块腌制。爆香姜片炒鸡肉，加入香菇和水焖煮入味。"
+        "instructions": "Soak mushrooms and marinate chicken chunks. Sauté ginger and chicken, add mushrooms and water to simmer until flavorful."
     },
     {
-        "name": "皮蛋瘦肉粥",
-        "difficulty": "中等",
+        "name": "Pork and Century Egg Congee",
+        "difficulty": "Medium",
         "time": 40,
         "ingredients": [
-            {
-                "name": "大米",
-                "type": "main"
-            },
-            {
-                "name": "瘦肉",
-                "type": "main"
-            },
-            {
-                "name": "皮蛋",
-                "type": "main"
-            },
-            {
-                "name": "姜丝",
-                "type": "side"
-            },
-            {
-                "name": "葱花",
-                "type": "side"
-            }
+            { "name": "Rice", "type": "main" },
+            { "name": "Lean Pork", "type": "main" },
+            { "name": "Century Egg", "type": "main" },
+            { "name": "Ginger Strips", "type": "side" },
+            { "name": "Scallion", "type": "side" }
         ],
-        "instructions": "大米煮开花，瘦肉切丝腌制，皮蛋切丁。粥底浓稠后加入肉丝皮蛋略煮。"
+        "instructions": "Boil rice until it breaks down. Add marinated pork strips and diced century egg. Simmer until thickened."
     },
     {
-        "name": "蒜苔炒肉",
-        "difficulty": "简单",
+        "name": "Stir-fried Pork with Garlic Bolts",
+        "difficulty": "Simple",
         "time": 12,
         "ingredients": [
-            {
-                "name": "蒜苔",
-                "type": "main"
-            },
-            {
-                "name": "猪肉",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "甜面酱",
-                "type": "side"
-            }
+            { "name": "Garlic Bolts", "type": "main" },
+            { "name": "Pork", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Sweet Bean Sauce", "type": "side" }
         ],
-        "instructions": "肉丝炒变色，加甜面酱炒香，倒入蒜苔段大火快炒至断生。"
+        "instructions": "Stir-fry pork strips, add sweet bean sauce for fragrance, then add garlic bolt segments and flash fry over high heat."
     },
     {
-        "name": "鲫鱼豆腐汤",
-        "difficulty": "中等",
+        "name": "Crucian Carp and Tofu Soup",
+        "difficulty": "Medium",
         "time": 30,
         "ingredients": [
-            {
-                "name": "鲫鱼",
-                "type": "main"
-            },
-            {
-                "name": "豆腐",
-                "type": "side"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Crucian Carp", "type": "main" },
+            { "name": "Tofu", "type": "side" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "鲫鱼煎至两面金黄，加开水大火煮至汤白，放入豆腐煮10分钟，撒葱花。"
+        "instructions": "Fry the fish until golden. Add boiling water and boil over high heat until the soup turns white. Add tofu for 10 minutes."
     },
     {
-        "name": "韭菜炒鸡蛋",
-        "difficulty": "简单",
+        "name": "Stir-fried Leeks with Eggs",
+        "difficulty": "Simple",
         "time": 8,
         "ingredients": [
-            {
-                "name": "韭菜",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "食用油",
-                "type": "side"
-            }
+            { "name": "Leeks", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Cooking Oil", "type": "side" }
         ],
-        "instructions": "鸡蛋炒块盛出，韭菜大火快炒几秒，回锅鸡蛋加盐拌匀。"
+        "instructions": "Scramble the eggs and set aside. Flash fry leeks for a few seconds, return eggs to the pan and season with salt."
     },
     {
-        "name": "红烧鱼块",
-        "difficulty": "困难",
+        "name": "Braised Fish Chunks",
+        "difficulty": "Hard",
         "time": 30,
         "ingredients": [
-            {
-                "name": "草鱼",
-                "type": "main"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "红烧酱油",
-                "type": "side"
-            }
+            { "name": "Grass Carp", "type": "main" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Braised Soy Sauce", "type": "side" }
         ],
-        "instructions": "鱼块腌制后炸至金黄。另起锅爆香调料，加水和鱼块焖煮收汁。"
+        "instructions": "Marinate and fry fish chunks until golden. Sauté seasonings in a new pan, add water and fish to simmer and reduce."
     },
     {
-        "name": "蔬菜沙拉",
-        "difficulty": "简单",
+        "name": "Vegetable Salad",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "生菜",
-                "type": "main"
-            },
-            {
-                "name": "小番茄",
-                "type": "side"
-            },
-            {
-                "name": "黄瓜",
-                "type": "side"
-            },
-            {
-                "name": "玉米粒",
-                "type": "side"
-            },
-            {
-                "name": "沙拉酱",
-                "type": "side"
-            }
+            { "name": "Lettuce", "type": "main" },
+            { "name": "Cherry Tomato", "type": "side" },
+            { "name": "Cucumber", "type": "side" },
+            { "name": "Corn Kernels", "type": "side" },
+            { "name": "Salad Dressing", "type": "side" }
         ],
-        "instructions": "所有蔬菜洗净切小块，沥干水分，淋上沙拉酱拌匀。"
+        "instructions": "Wash and chop all vegetables. Drain well and toss with salad dressing."
     },
     {
-        "name": "冬瓜排骨汤",
-        "difficulty": "中等",
+        "name": "Winter Melon and Pork Rib Soup",
+        "difficulty": "Medium",
         "time": 90,
         "ingredients": [
-            {
-                "name": "排骨",
-                "type": "main"
-            },
-            {
-                "name": "冬瓜",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Pork Ribs", "type": "main" },
+            { "name": "Winter Melon", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "排骨焯水后加姜片炖煮1小时，加入冬瓜块继续煮20分钟至透明。"
+        "instructions": "Blanch ribs and stew with ginger for 1 hour. Add winter melon chunks and cook for 20 minutes until translucent."
     },
     {
-        "name": "肉末茄子",
-        "difficulty": "中等",
+        "name": "Eggplant with Minced Pork",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "茄子",
-                "type": "main"
-            },
-            {
-                "name": "猪肉沫",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "豆瓣酱",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            }
+            { "name": "Eggplant", "type": "main" },
+            { "name": "Minced Pork", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Bean Paste", "type": "side" },
+            { "name": "Scallion", "type": "side" }
         ],
-        "instructions": "茄子炸软。炒香肉沫和豆瓣酱，倒入茄子翻炒入味，撒葱花。"
+        "instructions": "Fry the eggplant until soft. Sauté minced pork and bean paste, then combine with eggplant to braise."
     },
     {
-        "name": "家常豆腐",
-        "difficulty": "中等",
+        "name": "Home-style Tofu",
+        "difficulty": "Medium",
         "time": 18,
         "ingredients": [
-            {
-                "name": "豆腐",
-                "type": "main"
-            },
-            {
-                "name": "木耳",
-                "type": "side"
-            },
-            {
-                "name": "青椒",
-                "type": "side"
-            },
-            {
-                "name": "豆瓣酱",
-                "type": "side"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            }
+            { "name": "Tofu", "type": "main" },
+            { "name": "Wood Ear Mushroom", "type": "side" },
+            { "name": "Green Pepper", "type": "side" },
+            { "name": "Bean Paste", "type": "side" },
+            { "name": "Garlic", "type": "side" }
         ],
-        "instructions": "豆腐煎至两面金黄切三角，炒香辅料，放入豆腐烩煮。"
+        "instructions": "Fry tofu until golden and cut into triangles. Sauté side ingredients and bean paste, then simmer with tofu."
     },
     {
-        "name": "蛋炒饭",
-        "difficulty": "简单",
+        "name": "Egg Fried Rice",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "米饭",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "火腿肠",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Rice", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Ham Sausage", "type": "side" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "鸡蛋打散炒熟，倒入冷饭压散炒热，加配料和盐炒匀。"
+        "instructions": "Scramble eggs. Add cold rice and break it apart while heating. Add ham and salt and toss well."
     },
     {
-        "name": "油焖大虾",
-        "difficulty": "中等",
+        "name": "Braised Prawns in Oil",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "对虾",
-                "type": "main"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "番茄酱",
-                "type": "side"
-            },
-            {
-                "name": "白糖",
-                "type": "side"
-            }
+            { "name": "Prawns", "type": "main" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Ketchup", "type": "side" },
+            { "name": "Sugar", "type": "side" }
         ],
-        "instructions": "大虾剪须去线，多油煎出虾油，加调料和少许水焖煮收汁。"
+        "instructions": "Devein prawns. Fry in plenty of oil to extract shrimp oil, add seasonings and a little water to simmer and reduce."
     },
     {
-        "name": "凉拌木耳",
-        "difficulty": "简单",
+        "name": "Wood Ear Mushroom Salad",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "木耳",
-                "type": "main"
-            },
-            {
-                "name": "洋葱",
-                "type": "side"
-            },
-            {
-                "name": "香菜",
-                "type": "side"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            },
-            {
-                "name": "辣椒油",
-                "type": "side"
-            }
+            { "name": "Wood Ear Mushroom", "type": "main" },
+            { "name": "Onion", "type": "side" },
+            { "name": "Coriander", "type": "side" },
+            { "name": "Vinegar", "type": "side" },
+            { "name": "Chili Oil", "type": "side" }
         ],
-        "instructions": "木耳泡发焯水煮熟，过冷水，加入配菜和调料汁拌匀。"
+        "instructions": "Soak and blanch the mushrooms. Rinse with cold water and toss with vegetables and dressing."
     },
     {
-        "name": "黄焖鸡",
-        "difficulty": "中等",
+        "name": "Huangmen Chicken (Braised Chicken)",
+        "difficulty": "Medium",
         "time": 30,
         "ingredients": [
-            {
-                "name": "鸡腿肉",
-                "type": "main"
-            },
-            {
-                "name": "干香菇",
-                "type": "side"
-            },
-            {
-                "name": "青椒",
-                "type": "side"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "黄焖酱汁",
-                "type": "side"
-            }
+            { "name": "Chicken Thigh", "type": "main" },
+            { "name": "Dried Shiitake", "type": "side" },
+            { "name": "Green Pepper", "type": "side" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Huangmen Sauce", "type": "side" }
         ],
-        "instructions": "鸡肉炒糖色，加香菇水高压锅压10分钟，最后放入青椒收汁。"
+        "instructions": "Caramelize sugar with chicken. Pressure cook with mushroom water for 10 minutes, then add peppers and reduce sauce."
     },
     {
-        "name": "红薯粥",
-        "difficulty": "简单",
+        "name": "Sweet Potato Porridge",
+        "difficulty": "Simple",
         "time": 40,
         "ingredients": [
-            {
-                "name": "大米",
-                "type": "main"
-            },
-            {
-                "name": "红薯",
-                "type": "main"
-            },
-            {
-                "name": "水",
-                "type": "side"
-            }
+            { "name": "Rice", "type": "main" },
+            { "name": "Sweet Potato", "type": "main" },
+            { "name": "Water", "type": "side" }
         ],
-        "instructions": "大米洗净，红薯切块，放入电饭煲加水煮至红薯软糯。"
+        "instructions": "Wash rice and dice sweet potato. Add water to a rice cooker and cook until potatoes are soft."
     },
     {
-        "name": "蒜蓉空心菜",
-        "difficulty": "简单",
+        "name": "Water Spinach with Garlic",
+        "difficulty": "Simple",
         "time": 5,
         "ingredients": [
-            {
-                "name": "空心菜",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "猪油",
-                "type": "side"
-            }
+            { "name": "Water Spinach", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Lard", "type": "side" }
         ],
-        "instructions": "猪油渣爆香蒜末，下空心菜大火爆炒，软塌即出锅。"
+        "instructions": "Sauté garlic in lard until fragrant. Add water spinach and stir-fry over high heat until just wilted."
     },
     {
-        "name": "小炒黄牛肉",
-        "difficulty": "中等",
+        "name": "Stir-fried Beef with Chili",
+        "difficulty": "Medium",
         "time": 15,
         "ingredients": [
-            {
-                "name": "牛肉",
-                "type": "main"
-            },
-            {
-                "name": "小米椒",
-                "type": "side"
-            },
-            {
-                "name": "香菜",
-                "type": "side"
-            },
-            {
-                "name": "姜蒜",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            }
+            { "name": "Beef", "type": "main" },
+            { "name": "Millet Chili", "type": "side" },
+            { "name": "Coriander", "type": "side" },
+            { "name": "Ginger/Garlic", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" }
         ],
-        "instructions": "牛肉切片腌制滑熟，爆香大量小米椒姜蒜，倒入牛肉快炒撒香菜。"
+        "instructions": "Marinate and stir-fry beef slices. Sauté plenty of chili and aromatics, combine with beef and toss with coriander."
     },
     {
-        "name": "松仁玉米",
-        "difficulty": "简单",
+        "name": "Pine Nut and Corn Stir-fry",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "玉米粒",
-                "type": "main"
-            },
-            {
-                "name": "松仁",
-                "type": "side"
-            },
-            {
-                "name": "胡萝卜丁",
-                "type": "side"
-            },
-            {
-                "name": "黄瓜丁",
-                "type": "side"
-            },
-            {
-                "name": "白糖",
-                "type": "side"
-            }
+            { "name": "Corn Kernels", "type": "main" },
+            { "name": "Pine Nuts", "type": "side" },
+            { "name": "Diced Carrot", "type": "side" },
+            { "name": "Diced Cucumber", "type": "side" },
+            { "name": "Sugar", "type": "side" }
         ],
-        "instructions": "松仁炸黄，蔬菜丁焯水。锅留底油炒熟蔬菜，加糖，最后撒松仁。"
+        "instructions": "Fry pine nuts until golden. Blanch vegetable cubes. Stir-fry vegetables with sugar and top with pine nuts."
     },
     {
-        "name": "苦瓜炒蛋",
-        "difficulty": "简单",
+        "name": "Bitter Melon and Scrambled Eggs",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "苦瓜",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Bitter Melon", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "苦瓜切片撒盐杀水去苦味，焯水后与鸡蛋液同炒。"
+        "instructions": "Slice bitter melon and salt it to remove bitterness. Blanch, then scramble together with eggs."
     },
     {
-        "name": "酸菜鱼",
-        "difficulty": "困难",
+        "name": "Fish with Sichuan Pickles (Suancai Yu)",
+        "difficulty": "Hard",
         "time": 40,
         "ingredients": [
-            {
-                "name": "鱼片",
-                "type": "main"
-            },
-            {
-                "name": "酸菜",
-                "type": "main"
-            },
-            {
-                "name": "泡椒",
-                "type": "side"
-            },
-            {
-                "name": "花椒",
-                "type": "side"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            }
+            { "name": "Sliced Fish", "type": "main" },
+            { "name": "Pickled Greens", "type": "main" },
+            { "name": "Pickled Chili", "type": "side" },
+            { "name": "Sichuan Peppercorn", "type": "side" },
+            { "name": "Garlic", "type": "side" }
         ],
-        "instructions": "鱼骨熬汤，酸菜炒香倒入鱼汤煮开，滑入鱼片煮几十秒，淋热油。"
+        "instructions": "Make broth with fish bones. Sauté pickles, add broth, then poach fish slices for 30 seconds and top with hot oil."
     },
     {
-        "name": "韭菜盒子",
-        "difficulty": "困难",
+        "name": "Chive Boxes (Fried Leek Dumplings)",
+        "difficulty": "Hard",
         "time": 60,
         "ingredients": [
-            {
-                "name": "面粉",
-                "type": "main"
-            },
-            {
-                "name": "韭菜",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "虾皮",
-                "type": "side"
-            },
-            {
-                "name": "香油",
-                "type": "side"
-            }
+            { "name": "Flour", "type": "main" },
+            { "name": "Leeks", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Dried Shrimp", "type": "side" },
+            { "name": "Sesame Oil", "type": "side" }
         ],
-        "instructions": "和面醒发，韭菜鸡蛋虾皮调馅，包成半月形，平底锅烙至两面金黄。"
+        "instructions": "Prepare dough. Mix leeks, eggs, and shrimp for filling. Wrap into half-moons and pan-fry until golden."
     },
     {
-        "name": "白菜炖豆腐",
-        "difficulty": "简单",
+        "name": "Cabbage Stewed with Tofu",
+        "difficulty": "Simple",
         "time": 20,
         "ingredients": [
-            {
-                "name": "白菜",
-                "type": "main"
-            },
-            {
-                "name": "豆腐",
-                "type": "main"
-            },
-            {
-                "name": "粉条",
-                "type": "side"
-            },
-            {
-                "name": "姜",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Napa Cabbage", "type": "main" },
+            { "name": "Tofu", "type": "main" },
+            { "name": "Vermicelli", "type": "side" },
+            { "name": "Ginger", "type": "side" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "冻豆腐切块，白菜切段，加水炖煮，出锅前放入粉条煮软。"
+        "instructions": "Cut tofu and cabbage. Stew with water, and add vermicelli near the end until softened."
     },
     {
-        "name": "啤酒鸭",
-        "difficulty": "困难",
+        "name": "Beer Duck",
+        "difficulty": "Hard",
         "time": 50,
         "ingredients": [
-            {
-                "name": "鸭肉",
-                "type": "main"
-            },
-            {
-                "name": "啤酒",
-                "type": "main"
-            },
-            {
-                "name": "青红椒",
-                "type": "side"
-            },
-            {
-                "name": "姜蒜",
-                "type": "side"
-            },
-            {
-                "name": "八角",
-                "type": "side"
-            }
+            { "name": "Duck Meat", "type": "main" },
+            { "name": "Beer", "type": "main" },
+            { "name": "Chili Peppers", "type": "side" },
+            { "name": "Ginger/Garlic", "type": "side" },
+            { "name": "Star Anise", "type": "side" }
         ],
-        "instructions": "鸭肉焯水煸炒出油，倒啤酒没过鸭肉，焖煮40分钟收汁加配菜。"
+        "instructions": "Blanch duck and fry until oily. Pour in beer to cover, simmer for 40 minutes and reduce sauce with peppers."
     },
     {
-        "name": "蚂蚁上树",
-        "difficulty": "中等",
+        "name": "Ants Climbing a Tree (Vermicelli with Pork)",
+        "difficulty": "Medium",
         "time": 15,
         "ingredients": [
-            {
-                "name": "粉条",
-                "type": "main"
-            },
-            {
-                "name": "猪肉沫",
-                "type": "main"
-            },
-            {
-                "name": "豆瓣酱",
-                "type": "side"
-            },
-            {
-                "name": "葱姜蒜",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            }
+            { "name": "Vermicelli", "type": "main" },
+            { "name": "Minced Pork", "type": "main" },
+            { "name": "Bean Paste", "type": "side" },
+            { "name": "Ginger/Garlic", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" }
         ],
-        "instructions": "粉条泡软。肉沫炒酥加酱炒红油，加水下粉条煮干水分撒葱花。"
+        "instructions": "Soak vermicelli. Fry minced pork with bean paste for red oil, add water and vermicelli, cook until liquid is absorbed."
     },
     {
-        "name": "香肠炒饭",
-        "difficulty": "简单",
+        "name": "Sausage Fried Rice",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "米饭",
-                "type": "main"
-            },
-            {
-                "name": "香肠",
-                "type": "main"
-            },
-            {
-                "name": "青豆",
-                "type": "side"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "side"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            }
+            { "name": "Rice", "type": "main" },
+            { "name": "Chinese Sausage", "type": "main" },
+            { "name": "Green Peas", "type": "side" },
+            { "name": "Egg", "type": "side" },
+            { "name": "Scallion", "type": "side" }
         ],
-        "instructions": "香肠切片煸出油脂，下蛋液炒散，倒入米饭青豆翻炒均匀。"
+        "instructions": "Sauté sausage slices to release fat. Add egg and rice, then toss with peas until evenly heated."
     },
     {
-        "name": "南瓜粥",
-        "difficulty": "简单",
+        "name": "Pumpkin Porridge",
+        "difficulty": "Simple",
         "time": 30,
         "ingredients": [
-            {
-                "name": "南瓜",
-                "type": "main"
-            },
-            {
-                "name": "大米",
-                "type": "main"
-            },
-            {
-                "name": "糯米粉",
-                "type": "side"
-            },
-            {
-                "name": "冰糖",
-                "type": "side"
-            }
+            { "name": "Pumpkin", "type": "main" },
+            { "name": "Rice", "type": "main" },
+            { "name": "Glutinous Rice Flour", "type": "side" },
+            { "name": "Rock Sugar", "type": "side" }
         ],
-        "instructions": "南瓜蒸熟压泥，加水和大米煮粥，可加糯米圆子增加口感。"
+        "instructions": "Steam and mash pumpkin. Boil with rice into porridge; add small glutinous rice balls for texture if desired."
     },
     {
-        "name": "三杯鸡",
-        "difficulty": "中等",
+        "name": "Three Cup Chicken",
+        "difficulty": "Medium",
         "time": 40,
         "ingredients": [
-            {
-                "name": "鸡腿",
-                "type": "main"
-            },
-            {
-                "name": "一杯麻油",
-                "type": "side"
-            },
-            {
-                "name": "一杯米酒",
-                "type": "side"
-            },
-            {
-                "name": "一杯酱油",
-                "type": "side"
-            },
-            {
-                "name": "九层塔",
-                "type": "side"
-            }
+            { "name": "Chicken Thigh", "type": "main" },
+            { "name": "Sesame Oil", "type": "side" },
+            { "name": "Rice Wine", "type": "side" },
+            { "name": "Soy Sauce", "type": "side" },
+            { "name": "Basil", "type": "side" }
         ],
-        "instructions": "麻油煸姜，下鸡块炒白，倒入三杯调料焖煮收汁，放九层塔。"
+        "instructions": "Sauté ginger in sesame oil, brown the chicken. Add the 'three cups' of seasonings, simmer to reduce, then add basil."
     },
     {
-        "name": "孜然土豆片",
-        "difficulty": "简单",
+        "name": "Cumin Potato Slices",
+        "difficulty": "Simple",
         "time": 15,
         "ingredients": [
-            {
-                "name": "土豆",
-                "type": "main"
-            },
-            {
-                "name": "洋葱",
-                "type": "side"
-            },
-            {
-                "name": "孜然粉",
-                "type": "side"
-            },
-            {
-                "name": "辣椒粉",
-                "type": "side"
-            },
-            {
-                "name": "芝麻",
-                "type": "side"
-            }
+            { "name": "Potato", "type": "main" },
+            { "name": "Onion", "type": "side" },
+            { "name": "Cumin Powder", "type": "side" },
+            { "name": "Chili Powder", "type": "side" },
+            { "name": "Sesame Seeds", "type": "side" }
         ],
-        "instructions": "土豆切片煎至焦黄，倒出多余油，撒入大量孜然辣椒粉洋葱碎炒匀。"
+        "instructions": "Fry potato slices until golden and crisp. Drain excess oil, toss with cumin, chili powder, and chopped onions."
     },
     {
-        "name": "紫菜蛋花汤",
-        "difficulty": "简单",
+        "name": "Seaweed Egg Drop Soup",
+        "difficulty": "Simple",
         "time": 5,
         "ingredients": [
-            {
-                "name": "紫菜",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "虾皮",
-                "type": "side"
-            },
-            {
-                "name": "葱花",
-                "type": "side"
-            },
-            {
-                "name": "香油",
-                "type": "side"
-            }
+            { "name": "Seaweed", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Dried Shrimp", "type": "side" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Sesame Oil", "type": "side" }
         ],
-        "instructions": "水烧开，放入紫菜虾皮，淋入蛋液成花，关火淋香油撒葱花。"
+        "instructions": "Boil water, add seaweed and shrimp. Swirl in whisked egg to form ribbons, turn off heat and add sesame oil."
     },
     {
-        "name": "蒸水蛋",
-        "difficulty": "中等",
+        "name": "Steamed Egg Custard",
+        "difficulty": "Medium",
         "time": 15,
         "ingredients": [
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "温水",
-                "type": "main"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "香油",
-                "type": "side"
-            },
-            {
-                "name": "葱花",
-                "type": "side"
-            }
+            { "name": "Egg", "type": "main" },
+            { "name": "Warm Water", "type": "main" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Sesame Oil", "type": "side" },
+            { "name": "Scallion", "type": "side" }
         ],
-        "instructions": "蛋水比例1:1.5搅匀过筛，盖保鲜膜蒸10分钟，焖2分钟，淋料汁。"
+        "instructions": "Mix eggs with water (1:1.5 ratio) and strain. Cover and steam for 10 minutes, rest for 2, then drizzle with sauce."
     },
     {
-        "name": "椒盐虾",
-        "difficulty": "中等",
+        "name": "Salt and Pepper Shrimp",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "大虾",
-                "type": "main"
-            },
-            {
-                "name": "青红椒粒",
-                "type": "side"
-            },
-            {
-                "name": "洋葱粒",
-                "type": "side"
-            },
-            {
-                "name": "椒盐粉",
-                "type": "side"
-            },
-            {
-                "name": "淀粉",
-                "type": "side"
-            }
+            { "name": "Large Shrimp", "type": "main" },
+            { "name": "Bell Pepper Bits", "type": "side" },
+            { "name": "Onion Bits", "type": "side" },
+            { "name": "Salt and Pepper Powder", "type": "side" },
+            { "name": "Starch", "type": "side" }
         ],
-        "instructions": "虾开背拍淀粉炸酥，锅底油炒香配菜粒，倒入虾撒椒盐翻匀。"
+        "instructions": "Coat deveined shrimp in starch and deep-fry. Sauté vegetable bits, toss in shrimp and salt/pepper powder."
     },
     {
-        "name": "土豆泥",
-        "difficulty": "简单",
+        "name": "Mashed Potatoes",
+        "difficulty": "Simple",
         "time": 20,
         "ingredients": [
-            {
-                "name": "土豆",
-                "type": "main"
-            },
-            {
-                "name": "牛奶",
-                "type": "side"
-            },
-            {
-                "name": "黑胡椒",
-                "type": "side"
-            },
-            {
-                "name": "黄油",
-                "type": "side"
-            },
-            {
-                "name": "蚝油",
-                "type": "side"
-            }
+            { "name": "Potato", "type": "main" },
+            { "name": "Milk", "type": "side" },
+            { "name": "Black Pepper", "type": "side" },
+            { "name": "Butter", "type": "side" },
+            { "name": "Oyster Sauce", "type": "side" }
         ],
-        "instructions": "土豆蒸熟压泥加牛奶黄油拌匀。蚝油淀粉水煮成汁淋在上面。"
+        "instructions": "Steam and mash potatoes, mix with milk and butter. Boil oyster sauce and starch water to make a gravy to pour over."
     },
     {
-        "name": "辣子鸡丁",
-        "difficulty": "中等",
+        "name": "Sichuan Spicy Chicken Cubes (La Zi Ji)",
+        "difficulty": "Medium",
         "time": 30,
         "ingredients": [
-            {
-                "name": "鸡胸肉",
-                "type": "main"
-            },
-            {
-                "name": "干辣椒",
-                "type": "main"
-            },
-            {
-                "name": "花椒",
-                "type": "side"
-            },
-            {
-                "name": "葱姜蒜",
-                "type": "side"
-            },
-            {
-                "name": "芝麻",
-                "type": "side"
-            }
+            { "name": "Chicken Breast", "type": "main" },
+            { "name": "Dried Chili", "type": "main" },
+            { "name": "Sichuan Peppercorn", "type": "side" },
+            { "name": "Ginger/Garlic", "type": "side" },
+            { "name": "Sesame Seeds", "type": "side" }
         ],
-        "instructions": "鸡丁炸干水分。留底油爆香大量花椒辣椒，倒入鸡丁翻炒均匀。"
+        "instructions": "Deep-fry chicken cubes until dry. Sauté plenty of chili and peppercorns, then toss with chicken and sesame."
     },
     {
-        "name": "西芹百合",
-        "difficulty": "简单",
+        "name": "Celery with Lily Bulbs",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "西芹",
-                "type": "main"
-            },
-            {
-                "name": "百合",
-                "type": "main"
-            },
-            {
-                "name": "腰果",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "水淀粉",
-                "type": "side"
-            }
+            { "name": "Celery", "type": "main" },
+            { "name": "Lily Bulbs", "type": "main" },
+            { "name": "Cashews", "type": "side" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Starch Water", "type": "side" }
         ],
-        "instructions": "西芹百合焯水，腰果炸熟。热锅快炒西芹百合，勾薄芡，撒腰果。"
+        "instructions": "Blanch celery and lily bulbs. Fry cashews. Stir-fry vegetables quickly, thicken with starch, and top with cashews."
     },
     {
-        "name": "玉米排骨汤",
-        "difficulty": "中等",
+        "name": "Corn and Pork Rib Soup",
+        "difficulty": "Medium",
         "time": 90,
         "ingredients": [
-            {
-                "name": "排骨",
-                "type": "main"
-            },
-            {
-                "name": "玉米",
-                "type": "main"
-            },
-            {
-                "name": "胡萝卜",
-                "type": "main"
-            },
-            {
-                "name": "姜片",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Pork Ribs", "type": "main" },
+            { "name": "Corn", "type": "main" },
+            { "name": "Carrot", "type": "main" },
+            { "name": "Ginger Slices", "type": "side" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "排骨焯水，所有食材放入汤锅，大火烧开转小火炖1.5小时。"
+        "instructions": "Blanch ribs. Place all ingredients in a pot, bring to boil, then simmer over low heat for 1.5 hours."
     },
     {
-        "name": "洋葱圈",
-        "difficulty": "简单",
+        "name": "Onion Rings",
+        "difficulty": "Simple",
         "time": 15,
         "ingredients": [
-            {
-                "name": "洋葱",
-                "type": "main"
-            },
-            {
-                "name": "淀粉",
-                "type": "side"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "side"
-            },
-            {
-                "name": "面包糠",
-                "type": "side"
-            },
-            {
-                "name": "油",
-                "type": "side"
-            }
+            { "name": "Onion", "type": "main" },
+            { "name": "Starch", "type": "side" },
+            { "name": "Egg", "type": "side" },
+            { "name": "Breadcrumbs", "type": "side" },
+            { "name": "Oil", "type": "side" }
         ],
-        "instructions": "洋葱切圈，依次裹淀粉、蛋液、面包糠，油炸至金黄酥脆。"
+        "instructions": "Slice onions into rings. Coat with starch, then egg wash, then breadcrumbs. Deep-fry until golden."
     },
     {
-        "name": "炒面",
-        "difficulty": "简单",
+        "name": "Chow Mein (Stir-fried Noodles)",
+        "difficulty": "Simple",
         "time": 15,
         "ingredients": [
-            {
-                "name": "面条",
-                "type": "main"
-            },
-            {
-                "name": "包菜丝",
-                "type": "side"
-            },
-            {
-                "name": "火腿",
-                "type": "side"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "side"
-            },
-            {
-                "name": "老抽",
-                "type": "side"
-            }
+            { "name": "Noodles", "type": "main" },
+            { "name": "Shredded Cabbage", "type": "side" },
+            { "name": "Ham", "type": "side" },
+            { "name": "Egg", "type": "side" },
+            { "name": "Dark Soy Sauce", "type": "side" }
         ],
-        "instructions": "面条煮8分熟捞出拌油。炒配菜，下入面条加酱油大火快炒。"
+        "instructions": "Boil noodles until 80% cooked and toss with oil. Sauté side ingredients, add noodles and soy sauce, stir-fry over high heat."
     },
     {
-        "name": "水煮肉片",
-        "difficulty": "困难",
+        "name": "Sichuan Boiled Pork (Shui Zhu Rou Pian)",
+        "difficulty": "Hard",
         "time": 40,
         "ingredients": [
-            {
-                "name": "猪里脊",
-                "type": "main"
-            },
-            {
-                "name": "豆芽",
-                "type": "main"
-            },
-            {
-                "name": "白菜",
-                "type": "main"
-            },
-            {
-                "name": "豆瓣酱",
-                "type": "side"
-            },
-            {
-                "name": "干辣椒面",
-                "type": "side"
-            }
+            { "name": "Pork Tenderloin", "type": "main" },
+            { "name": "Bean Sprouts", "type": "main" },
+            { "name": "Cabbage", "type": "main" },
+            { "name": "Bean Paste", "type": "side" },
+            { "name": "Chili Powder", "type": "side" }
         ],
-        "instructions": "蔬菜焯水铺底。煮红汤滑入肉片，倒在菜上，顶上撒蒜辣椒面泼热油。"
+        "instructions": "Blanch vegetables for the base. Boil red broth, poach pork slices, pour over veggies, top with garlic/chili and sizzle with hot oil."
     },
     {
-        "name": "清炒藕片",
-        "difficulty": "简单",
+        "name": "Stir-fried Lotus Root Slices",
+        "difficulty": "Simple",
         "time": 8,
         "ingredients": [
-            {
-                "name": "莲藕",
-                "type": "main"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "白醋",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "红椒",
-                "type": "side"
-            }
+            { "name": "Lotus Root", "type": "main" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "White Vinegar", "type": "side" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Red Pepper", "type": "side" }
         ],
-        "instructions": "莲藕切片泡水去淀粉。热锅快炒，烹入白醋保持脆白。"
+        "instructions": "Slice lotus root and soak to remove starch. Stir-fry quickly with white vinegar to keep them white and crunchy."
     },
     {
-        "name": "青椒酿肉",
-        "difficulty": "困难",
+        "name": "Meat-Stuffed Green Peppers",
+        "difficulty": "Hard",
         "time": 30,
         "ingredients": [
-            {
-                "name": "青椒",
-                "type": "main"
-            },
-            {
-                "name": "猪肉馅",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "淀粉",
-                "type": "side"
-            }
+            { "name": "Green Pepper", "type": "main" },
+            { "name": "Minced Pork", "type": "main" },
+            { "name": "Egg", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Starch", "type": "side" }
         ],
-        "instructions": "肉馅塞入去蒂青椒中，煎至青椒表皮起皱虎皮状，加酱汁焖熟。"
+        "instructions": "Stuff peppers with pork filling. Fry until 'tiger skin' appears, then simmer with sauce until cooked."
     },
     {
-        "name": "番茄火锅",
-        "difficulty": "简单",
+        "name": "Tomato Hot Pot",
+        "difficulty": "Simple",
         "time": 20,
         "ingredients": [
-            {
-                "name": "番茄火锅底料",
-                "type": "main"
-            },
-            {
-                "name": "各类蔬菜",
-                "type": "main"
-            },
-            {
-                "name": "肥牛",
-                "type": "main"
-            },
-            {
-                "name": "丸子",
-                "type": "side"
-            }
+            { "name": "Tomato Soup Base", "type": "main" },
+            { "name": "Assorted Vegetables", "type": "main" },
+            { "name": "Sliced Beef", "type": "main" },
+            { "name": "Meatballs", "type": "side" }
         ],
-        "instructions": "超市买底料加水煮开，涮你爱吃的一切。"
+        "instructions": "Boil the soup base with water and cook whatever you like in it."
     },
     {
-        "name": "葱油拌面",
-        "difficulty": "简单",
+        "name": "Scallion Oil Noodles",
+        "difficulty": "Simple",
         "time": 15,
         "ingredients": [
-            {
-                "name": "面条",
-                "type": "main"
-            },
-            {
-                "name": "小葱",
-                "type": "main"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "老抽",
-                "type": "side"
-            },
-            {
-                "name": "糖",
-                "type": "side"
-            }
+            { "name": "Noodles", "type": "main" },
+            { "name": "Small Scallions", "type": "main" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Dark Soy Sauce", "type": "side" },
+            { "name": "Sugar", "type": "side" }
         ],
-        "instructions": "小葱炸至焦黄制成葱油，倒入生抽老抽糖煮开，拌入煮好的面条。"
+        "instructions": "Fry scallions until charred to make scallion oil. Add soy sauces and sugar to boil, then toss with cooked noodles."
     },
     {
-        "name": "培根金针菇卷",
-        "difficulty": "中等",
+        "name": "Bacon Wrapped Enoki Mushrooms",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "培根",
-                "type": "main"
-            },
-            {
-                "name": "金针菇",
-                "type": "main"
-            },
-            {
-                "name": "黑胡椒",
-                "type": "side"
-            },
-            {
-                "name": "牙签",
-                "type": "side"
-            }
+            { "name": "Bacon", "type": "main" },
+            { "name": "Enoki Mushroom", "type": "main" },
+            { "name": "Black Pepper", "type": "side" },
+            { "name": "Toothpicks", "type": "side" }
         ],
-        "instructions": "培根卷住一小把金针菇用牙签固定，煎至培根焦黄金针菇熟透。"
+        "instructions": "Wrap enoki with bacon and secure with toothpicks. Pan-fry until bacon is crisp and mushrooms are cooked."
     },
     {
-        "name": "酸汤肥牛",
-        "difficulty": "中等",
+        "name": "Beef in Golden Sour Soup",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "肥牛",
-                "type": "main"
-            },
-            {
-                "name": "黄灯笼椒酱",
-                "type": "main"
-            },
-            {
-                "name": "金针菇",
-                "type": "side"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "白醋",
-                "type": "side"
-            }
+            { "name": "Sliced Beef", "type": "main" },
+            { "name": "Yellow Lantern Chili Sauce", "type": "main" },
+            { "name": "Enoki Mushroom", "type": "side" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "White Vinegar", "type": "side" }
         ],
-        "instructions": "爆香黄椒酱加水煮开，滤渣，煮熟金针菇捞出，滑入肥牛煮熟淋醋。"
+        "instructions": "Sauté chili sauce, add water and boil then strain. Cook mushrooms, poach beef slices, and finish with vinegar."
     },
     {
-        "name": "丝瓜蛋汤",
-        "difficulty": "简单",
+        "name": "Luffa and Egg Soup",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "丝瓜",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Luffa (Silk Gourd)", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "丝瓜切滚刀块炒软，加水烧开，淋入蛋液，点香油。"
+        "instructions": "Sauté luffa chunks until soft, add water and boil. Swirl in whisked eggs and finish with sesame oil."
     },
     {
-        "name": "炸酱面",
-        "difficulty": "中等",
+        "name": "Zhajiangmian (Fried Sauce Noodles)",
+        "difficulty": "Medium",
         "time": 40,
         "ingredients": [
-            {
-                "name": "手擀面",
-                "type": "main"
-            },
-            {
-                "name": "五花肉丁",
-                "type": "main"
-            },
-            {
-                "name": "干黄酱",
-                "type": "main"
-            },
-            {
-                "name": "甜面酱",
-                "type": "side"
-            },
-            {
-                "name": "黄瓜丝",
-                "type": "side"
-            }
+            { "name": "Hand-pulled Noodles", "type": "main" },
+            { "name": "Pork Belly Dice", "type": "main" },
+            { "name": "Dry Yellow Soybean Paste", "type": "main" },
+            { "name": "Sweet Bean Sauce", "type": "side" },
+            { "name": "Cucumber Shreds", "type": "side" }
         ],
-        "instructions": "肉丁煸出油，下入混合酱慢炸至油酱分离，浇在面上配菜码。"
+        "instructions": "Fry pork dice to release fat. Add mixed pastes and fry slowly until oil separates. Serve over noodles with garnishes."
     },
     {
-        "name": "口水鸡",
-        "difficulty": "困难",
+        "name": "Mouth-watering Chicken (Koushui Ji)",
+        "difficulty": "Hard",
         "time": 40,
         "ingredients": [
-            {
-                "name": "鸡腿",
-                "type": "main"
-            },
-            {
-                "name": "花生碎",
-                "type": "side"
-            },
-            {
-                "name": "辣椒油",
-                "type": "side"
-            },
-            {
-                "name": "花椒油",
-                "type": "side"
-            },
-            {
-                "name": "芝麻",
-                "type": "side"
-            }
+            { "name": "Chicken Thigh", "type": "main" },
+            { "name": "Crushed Peanuts", "type": "side" },
+            { "name": "Chili Oil", "type": "side" },
+            { "name": "Sichuan Peppercorn Oil", "type": "side" },
+            { "name": "Sesame Seeds", "type": "side" }
         ],
-        "instructions": "鸡腿煮熟冰镇切块，淋上调好的红油味汁，撒花生芝麻。"
+        "instructions": "Boil chicken, ice it, and chop. Pour over a spicy chili oil sauce and sprinkle with peanuts and sesame."
     },
     {
-        "name": "虎皮青椒",
-        "difficulty": "简单",
+        "name": "Tiger-skin Green Peppers",
+        "difficulty": "Simple",
         "time": 15,
         "ingredients": [
-            {
-                "name": "青椒",
-                "type": "main"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            },
-            {
-                "name": "白糖",
-                "type": "side"
-            }
+            { "name": "Green Pepper", "type": "main" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Vinegar", "type": "side" },
+            { "name": "Sugar", "type": "side" }
         ],
-        "instructions": "整颗青椒大火煎压至表面焦黄起皮，倒入味汁焖煮入味。"
+        "instructions": "Fry whole peppers over high heat while pressing them until charred and blistered. Add sauce to braise."
     },
     {
-        "name": "香辣虾",
-        "difficulty": "中等",
+        "name": "Spicy Shrimp",
+        "difficulty": "Medium",
         "time": 25,
         "ingredients": [
-            {
-                "name": "大虾",
-                "type": "main"
-            },
-            {
-                "name": "干辣椒",
-                "type": "side"
-            },
-            {
-                "name": "芹菜",
-                "type": "side"
-            },
-            {
-                "name": "麻辣火锅底料",
-                "type": "side"
-            },
-            {
-                "name": "白芝麻",
-                "type": "side"
-            }
+            { "name": "Large Shrimp", "type": "main" },
+            { "name": "Dried Chili", "type": "side" },
+            { "name": "Celery", "type": "side" },
+            { "name": "Mala Hot Pot Base", "type": "side" },
+            { "name": "White Sesame", "type": "side" }
         ],
-        "instructions": "虾过油。炒香底料，放入虾和配菜段快速翻炒裹上红油。"
+        "instructions": "Fry shrimp. Sauté the hot pot base, add shrimp and celery segments, stir-fry quickly to coat."
     },
     {
-        "name": "平菇炒蛋",
-        "difficulty": "简单",
+        "name": "Stir-fried Oyster Mushrooms with Eggs",
+        "difficulty": "Simple",
         "time": 10,
         "ingredients": [
-            {
-                "name": "平菇",
-                "type": "main"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "main"
-            },
-            {
-                "name": "葱",
-                "type": "side"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            },
-            {
-                "name": "耗油",
-                "type": "side"
-            }
+            { "name": "Oyster Mushroom", "type": "main" },
+            { "name": "Egg", "type": "main" },
+            { "name": "Scallion", "type": "side" },
+            { "name": "Salt", "type": "side" },
+            { "name": "Oyster Sauce", "type": "side" }
         ],
-        "instructions": "平菇撕条焯水挤干。鸡蛋炒熟。锅炒平菇加耗油，混入鸡蛋撒葱。"
+        "instructions": "Tear mushrooms and blanch. Scramble eggs. Sauté mushrooms with oyster sauce, then mix with eggs."
     },
     {
-        "name": "干锅花菜",
-        "difficulty": "中等",
+        "name": "Dry-pot Cauliflower",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "有机花菜",
-                "type": "main"
-            },
-            {
-                "name": "五花肉片",
-                "type": "main"
-            },
-            {
-                "name": "干辣椒",
-                "type": "side"
-            },
-            {
-                "name": "蒜",
-                "type": "side"
-            },
-            {
-                "name": "酱油",
-                "type": "side"
-            }
+            { "name": "Organic Cauliflower", "type": "main" },
+            { "name": "Pork Belly Slices", "type": "main" },
+            { "name": "Dried Chili", "type": "side" },
+            { "name": "Garlic", "type": "side" },
+            { "name": "Soy Sauce", "type": "side" }
         ],
-        "instructions": "花菜过油断生。五花肉煸油，下辅料和花菜翻炒，酒精炉加热更好。"
+        "instructions": "Flash-fry cauliflower. Sauté pork belly until oily, add aromatics and cauliflower, toss well. Best served on a burner."
     },
     {
-        "name": "红酒炖梨",
-        "difficulty": "简单",
+        "name": "Pears Poached in Red Wine",
+        "difficulty": "Simple",
         "time": 30,
         "ingredients": [
-            {
-                "name": "雪梨",
-                "type": "main"
-            },
-            {
-                "name": "红酒",
-                "type": "main"
-            },
-            {
-                "name": "冰糖",
-                "type": "side"
-            },
-            {
-                "name": "肉桂棒",
-                "type": "side"
-            }
+            { "name": "Snow Pear", "type": "main" },
+            { "name": "Red Wine", "type": "main" },
+            { "name": "Rock Sugar", "type": "side" },
+            { "name": "Cinnamon Stick", "type": "side" }
         ],
-        "instructions": "梨去皮整个放入红酒中，加冰糖肉桂，小火煮至梨身通红。"
+        "instructions": "Peel pears and place in wine with sugar and cinnamon. Simmer until the pears turn deep red."
     },
     {
-        "name": "凉拌皮蛋",
-        "difficulty": "简单",
+        "name": "Century Egg Salad",
+        "difficulty": "Simple",
         "time": 5,
         "ingredients": [
-            {
-                "name": "皮蛋",
-                "type": "main"
-            },
-            {
-                "name": "姜末",
-                "type": "main"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            },
-            {
-                "name": "生抽",
-                "type": "side"
-            },
-            {
-                "name": "辣椒油",
-                "type": "side"
-            }
+            { "name": "Century Egg", "type": "main" },
+            { "name": "Minced Ginger", "type": "main" },
+            { "name": "Vinegar", "type": "side" },
+            { "name": "Light Soy Sauce", "type": "side" },
+            { "name": "Chili Oil", "type": "side" }
         ],
-        "instructions": "皮蛋切瓣摆盘，淋上混合了姜末和调料的酱汁。"
+        "instructions": "Slice eggs and plate. Drizzle with a sauce made of ginger and other seasonings."
     },
     {
-        "name": "可乐饼",
-        "difficulty": "中等",
+        "name": "Korokke (Potato Croquette)",
+        "difficulty": "Medium",
         "time": 30,
         "ingredients": [
-            {
-                "name": "土豆",
-                "type": "main"
-            },
-            {
-                "name": "肉沫",
-                "type": "main"
-            },
-            {
-                "name": "洋葱",
-                "type": "side"
-            },
-            {
-                "name": "面粉",
-                "type": "side"
-            },
-            {
-                "name": "面包糠",
-                "type": "side"
-            }
+            { "name": "Potato", "type": "main" },
+            { "name": "Minced Meat", "type": "main" },
+            { "name": "Onion", "type": "side" },
+            { "name": "Flour", "type": "side" },
+            { "name": "Breadcrumbs", "type": "side" }
         ],
-        "instructions": "炒熟肉沫洋葱混入土豆泥，整形成圆饼，裹粉蛋液面包糠油炸。"
+        "instructions": "Mix sautéed meat/onion with mashed potatoes. Form patties, coat with flour, egg, and breadcrumbs, then deep-fry."
     },
     {
-        "name": "酸辣汤",
-        "difficulty": "中等",
+        "name": "Hot and Sour Soup",
+        "difficulty": "Medium",
         "time": 20,
         "ingredients": [
-            {
-                "name": "豆腐丝",
-                "type": "main"
-            },
-            {
-                "name": "木耳丝",
-                "type": "side"
-            },
-            {
-                "name": "鸡蛋",
-                "type": "side"
-            },
-            {
-                "name": "胡椒粉",
-                "type": "side"
-            },
-            {
-                "name": "醋",
-                "type": "side"
-            }
+            { "name": "Shredded Tofu", "type": "main" },
+            { "name": "Shredded Wood Ear", "type": "side" },
+            { "name": "Egg", "type": "side" },
+            { "name": "White Pepper Powder", "type": "side" },
+            { "name": "Vinegar", "type": "side" }
         ],
-        "instructions": "高汤煮开食材，勾芡，关火前撒大量白胡椒粉和醋，淋蛋花。"
+        "instructions": "Boil ingredients in broth, thicken with starch. Add plenty of white pepper and vinegar before swirling in the egg."
     },
     {
-        "name": "糖醋里脊",
-        "difficulty": "困难",
+        "name": "Sweet and Sour Pork Tenderloin",
+        "difficulty": "Hard",
         "time": 30,
         "ingredients": [
-            {
-                "name": "猪里脊",
-                "type": "main"
-            },
-            {
-                "name": "淀粉",
-                "type": "side"
-            },
-            {
-                "name": "番茄酱",
-                "type": "side"
-            },
-            {
-                "name": "白糖",
-                "type": "side"
-            },
-            {
-                "name": "白醋",
-                "type": "side"
-            }
+            { "name": "Pork Tenderloin", "type": "main" },
+            { "name": "Starch", "type": "side" },
+            { "name": "Ketchup", "type": "side" },
+            { "name": "Sugar", "type": "side" },
+            { "name": "White Vinegar", "type": "side" }
         ],
-        "instructions": "肉条裹面糊二遍复炸至酥脆，锅中熬糖醋汁，倒入肉条快速翻匀。"
+        "instructions": "Double-fry battered pork strips until crispy. Boil the sweet and sour sauce in a pan, toss in the pork quickly."
     },
     {
-        "name": "西兰花虾仁菌菇汤",
-        "difficulty": "简单",
+        "name": "Broccoli, Shrimp and Mushroom Soup",
+        "difficulty": "Simple",
         "time": 15,
         "ingredients": [
-            {
-                "name": "西兰花",
-                "type": "main"
-            },
-            {
-                "name": "虾仁",
-                "type": "main"
-            },
-            {
-                "name": "海鲜菇",
-                "type": "main"
-            },
-            {
-                "name": "盐",
-                "type": "side"
-            }
+            { "name": "Broccoli", "type": "main" },
+            { "name": "Shrimp", "type": "main" },
+            { "name": "Seafood Mushroom", "type": "main" },
+            { "name": "Salt", "type": "side" }
         ],
-        "instructions": "虾仁菌菇略炒加水煮开，放入西兰花煮熟，清淡调味。"
+        "instructions": "Lightly sauté shrimp and mushrooms, add water and boil. Add broccoli until cooked, season lightly."
     }
 ]
