@@ -1,69 +1,66 @@
-# 🍳 SmartChef - 你的智能厨房助手 
+# 👨‍🍳 SmartChef 4.0: 冰箱食材智能管家
 
-> **“冰箱里只剩这几样了，我能做点什么菜？”** —— 这是一个专门解决“今天吃什么”终极难题的神器。
-
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B.svg)](https://streamlit.io/)
-[![GitHub license](https://img.shields.io/github/license/DEM-YU/SmartChef)](https://github.com/DEM-YU/SmartChef/blob/main/LICENSE)
+**SmartChef** 是一款基于 Python 和 Streamlit 开发的智能菜谱匹配应用。它专门为解决“冰箱里有食材却不知道吃什么”的痛点而设计，通过一套精密的本地加权匹配算法，为用户提供最科学的烹饪建议，无需依赖不稳定的外部 API。
 
 ---
 
-## 🌐 在线体验
-🚀 **[点击这里直接访问：SmartChef Live Demo](https://smartchef-xzy5i33ypmhvtqvfapp9vbt.streamlit.app/)**
+## 🌟 核心亮点 (Key Highlights)
+
+* **智能加权逻辑**：系统将食材严谨分为“核心主料”与“普通配料”，匹配度计算更贴合实际烹饪需求。
+* **核心缺失惩罚机制**：创新性地引入“主料缺失惩罚”，若缺失关键食材（如西红柿炒蛋缺鸡蛋），匹配得分将按 50% 的指数级下降，确保推荐结果的严肃性。
+* **非食用项智能过滤**：系统自动识别并静默处理“调料”与“工具”（如盐、酱油、牙签、保鲜膜等），这些项不占位、不扣分，极大地提升了用户体验。
+* **全自动化分类器**：基于 50+ 菜谱大数据，动态将数百种食材归类为肉类、蔬菜、海鲜等六大模块，支持侧边栏折叠检索。
+* **响应式视觉系统**：采用 Streamlit 原生进度条与 Markdown 彩色渲染，实时展示每道菜的匹配百分比。
 
 ---
 
-## ✨ 项目亮点
+## 🧠 核心算法逻辑 (Core Algorithm)
 
-* **分类点选系统**：精心设计的分类界面（肉类、蔬菜、水产、蛋奶），像在餐厅点菜一样勾选你有的食材。
-* **智能推荐逻辑**：
-    * **✅ 完美匹配**：展示你手头食材可以直接下锅的所有菜谱。
-    * **💡 惊喜推荐**：展示只需再多买 1 样食材就能解锁的新菜品，并高亮显示缺少的食材。
-* **全方位信息展示**：每道菜都标注了 **难度等级**、**预计耗时** 以及 **菜系分类**。
-* **完全响应式设计**：无论是在电脑显示器还是手机屏幕上，都能获得极佳的交互体验。
+### 1. 食材分级权重 (Weighting)
+* **主料 (Main)**: **4 分**（决定菜肴性质的食材，如猪肉、牛肉）。
+* **辅料 (Side)**: **1 分**（辅助口感的食材，如青椒、木耳）。
 
-## 📸 界面预览
+### 2. 得分与惩罚公式 (Scoring)
+系统计算公式为：
+$$Score = \frac{\sum (匹配食材权重)}{\sum (总食材权重)} \times (0.5^{n})$$
+*(n 为缺失的主料数量)*。
 
-![SmartChef Preview](https://raw.githubusercontent.com/DEM-YU/SmartChef/main/screenshot.png)
-
----
-
-## 🛠️ 技术栈
-* **Frontend/Backend**: [Streamlit](https://streamlit.io/) - 强大的 Python 原生 Web 框架。
-* **Logic**: Python - 使用高效的集合 (Set) 运算处理食材匹配。
-* **Data Source**: JSON - 结构化的菜谱数据库，易于扩展。
+### 3. 基础设施过滤 (Infrastructure Filter)
+维护了一个包含 40+ 项的 `IGNORE_ITEMS` 库，包含葱姜蒜、酱醋盐、牙签、水等。这些项被自动归类为“自备调料/工具”，不再计入核心缺失名单。
 
 ---
 
-## 🚀 如何在本地运行
+## 🛠️ 技术架构 (Tech Stack)
 
-1.  **克隆仓库**
+* **前端展示**: Streamlit (Python-based Web Framework)
+* **算法核心**: Python 3.x (Weighted Matching Logic)
+* **数据存储**: 结构化 JSON 数据库 (包含 50+ 经典菜谱)
+
+---
+
+## 📂 文件说明 (Project Structure)
+
+* `app.py`: UI 渲染层，处理分类侧边栏与结果容器展示。
+* `logic.py`: 逻辑计算层，包含食材分拣、过滤与智能评分算法。
+* `recipes.json`: 数据持久层，存储所有菜谱的成分、步骤与属性。
+* `requirements.txt`: 环境依赖清单。
+
+---
+
+## 🚀 部署指南 (Deployment)
+
+1.  **环境配置**:
     ```bash
-    git clone [https://github.com/DEM-YU/SmartChef.git](https://github.com/DEM-YU/SmartChef.git)
-    cd SmartChef
+    pip install streamlit
     ```
-
-2.  **安装依赖库**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3.  **启动应用**
+2.  **本地启动**:
     ```bash
     streamlit run app.py
     ```
+3.  **数据更新**:
+    直接在 `recipes.json` 中添加新的 JSON 块，系统将自动识别并更新食材分类。
 
 ---
 
-## 📈 路线图 (Roadmap)
-- [ ] 🤖 **AI 烹饪指南**：接入 LLM API 自动生成每道菜的详细步骤。
-- [ ] 🖼️ **诱人视觉**：为每一道菜自动匹配高清美食大图。
-- [ ] 📝 **购物清单**：一键导出缺少的食材，直接发到手机微信。
-
-## 🤝 贡献
-如果你有有趣的菜谱或更好的匹配逻辑，欢迎提交 Pull Request！
-
----
-
-**Author**: [Brooks Yu](https://github.com/DEM-YU)  
-**Project Created via Vibe Coding** 🚀
+**开发者**: DEM-YU (阿尔伯塔大学 CS 专业)
+**项目更新时间**: 2025年12月21日 06:16 (Edmonton)
