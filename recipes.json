@@ -1,21 +1,2494 @@
 [
     {
         "name": "西红柿炒鸡蛋",
+        "difficulty": "简单",
+        "time": 10,
         "ingredients": [
-            {"name": "西红柿", "type": "main"},
-            {"name": "鸡蛋", "type": "main"},
-            {"name": "小葱", "type": "side"}
+            {
+                "name": "西红柿",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "食用油",
+                "type": "side"
+            }
         ],
-        "time": 10
+        "instructions": "鸡蛋炒熟盛出，西红柿炒出汁，放入鸡蛋混合，加盐调味。"
+    },
+    {
+        "name": "青椒肉丝",
+        "difficulty": "中等",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "猪肉",
+                "type": "main"
+            },
+            {
+                "name": "青椒",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            }
+        ],
+        "instructions": "猪肉切丝腌制，滑炒变色盛出；青椒炒断生，倒入肉丝和调料快炒。"
     },
     {
         "name": "土豆炖牛肉",
+        "difficulty": "困难",
+        "time": 60,
         "ingredients": [
-            {"name": "牛肉", "type": "main"},
-            {"name": "土豆", "type": "main"},
-            {"name": "胡萝卜", "type": "side"},
-            {"name": "洋葱", "type": "side"}
+            {
+                "name": "牛肉",
+                "type": "main"
+            },
+            {
+                "name": "土豆",
+                "type": "main"
+            },
+            {
+                "name": "胡萝卜",
+                "type": "side"
+            },
+            {
+                "name": "洋葱",
+                "type": "side"
+            },
+            {
+                "name": "八角",
+                "type": "side"
+            }
         ],
-        "time": 40
+        "instructions": "牛肉焯水后炖煮40分钟，加入土豆胡萝卜块继续炖20分钟至软烂。"
+    },
+    {
+        "name": "麻婆豆腐",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "豆腐",
+                "type": "main"
+            },
+            {
+                "name": "猪肉沫",
+                "type": "main"
+            },
+            {
+                "name": "花椒",
+                "type": "side"
+            },
+            {
+                "name": "郫县豆瓣酱",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            }
+        ],
+        "instructions": "肉沫炒酥，加豆瓣酱炒红油，加水下豆煮几分钟，勾芡撒花椒粉。"
+    },
+    {
+        "name": "糖醋排骨",
+        "difficulty": "中等",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "排骨",
+                "type": "main"
+            },
+            {
+                "name": "冰糖",
+                "type": "side"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "芝麻",
+                "type": "side"
+            }
+        ],
+        "instructions": "排骨焯水，炒糖色，加水和调料慢炖收汁，出锅撒芝麻。"
+    },
+    {
+        "name": "宫保鸡丁",
+        "difficulty": "中等",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "鸡胸肉",
+                "type": "main"
+            },
+            {
+                "name": "花生米",
+                "type": "main"
+            },
+            {
+                "name": "干辣椒",
+                "type": "side"
+            },
+            {
+                "name": "花椒",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡肉切丁腌制，爆香辣椒花椒，滑炒鸡肉，最后加入花生米颠勺。"
+    },
+    {
+        "name": "酸辣土豆丝",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "土豆",
+                "type": "main"
+            },
+            {
+                "name": "干辣椒",
+                "type": "side"
+            },
+            {
+                "name": "花椒",
+                "type": "side"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            }
+        ],
+        "instructions": "土豆切丝焯水或者直接爆炒，加入大量醋和辣椒，大火快炒保持脆爽。"
+    },
+    {
+        "name": "红烧肉",
+        "difficulty": "困难",
+        "time": 90,
+        "ingredients": [
+            {
+                "name": "五花肉",
+                "type": "main"
+            },
+            {
+                "name": "冰糖",
+                "type": "side"
+            },
+            {
+                "name": "八角",
+                "type": "side"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "老抽",
+                "type": "side"
+            }
+        ],
+        "instructions": "五花肉切块焯水，炒糖色，加香料小火慢炖1小时以上，大火收汁。"
+    },
+    {
+        "name": "蒜蓉西兰花",
+        "difficulty": "简单",
+        "time": 8,
+        "ingredients": [
+            {
+                "name": "西兰花",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "鸡精",
+                "type": "side"
+            },
+            {
+                "name": "食用油",
+                "type": "side"
+            }
+        ],
+        "instructions": "西兰花焯水，爆香大量蒜末，倒入西兰花快速翻炒调味。"
+    },
+    {
+        "name": "鱼香肉丝",
+        "difficulty": "中等",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "猪肉",
+                "type": "main"
+            },
+            {
+                "name": "木耳",
+                "type": "side"
+            },
+            {
+                "name": "胡萝卜",
+                "type": "side"
+            },
+            {
+                "name": "泡椒",
+                "type": "side"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            }
+        ],
+        "instructions": "肉丝滑熟，炒红泡椒，加入配菜，倒入鱼香汁（糖醋比例）快速翻炒。"
+    },
+    {
+        "name": "可乐鸡翅",
+        "difficulty": "简单",
+        "time": 25,
+        "ingredients": [
+            {
+                "name": "鸡翅",
+                "type": "main"
+            },
+            {
+                "name": "可乐",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "料酒",
+                "type": "side"
+            },
+            {
+                "name": "酱油",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡翅煎至两面金黄，倒入可乐没过鸡翅，中小火焖煮收汁。"
+    },
+    {
+        "name": "回锅肉",
+        "difficulty": "中等",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "五花肉",
+                "type": "main"
+            },
+            {
+                "name": "蒜苗",
+                "type": "main"
+            },
+            {
+                "name": "郫县豆瓣酱",
+                "type": "side"
+            },
+            {
+                "name": "豆豉",
+                "type": "side"
+            },
+            {
+                "name": "白糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "五花肉煮至八成熟切片，爆炒出灯盏窝，加豆瓣酱和蒜苗翻炒。"
+    },
+    {
+        "name": "清蒸鲈鱼",
+        "difficulty": "中等",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "鲈鱼",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "蒸鱼豉油",
+                "type": "side"
+            },
+            {
+                "name": "食用油",
+                "type": "side"
+            }
+        ],
+        "instructions": "鱼身铺姜丝上汽蒸8-10分钟，倒掉汤汁，铺葱丝淋热油和豆豉油。"
+    },
+    {
+        "name": "地三鲜",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "土豆",
+                "type": "main"
+            },
+            {
+                "name": "茄子",
+                "type": "main"
+            },
+            {
+                "name": "青椒",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "酱油",
+                "type": "side"
+            }
+        ],
+        "instructions": "土豆茄子切块炸软，留底油爆香蒜末，三样食材合炒，加酱汁勾芡。"
+    },
+    {
+        "name": "洋葱炒鸡蛋",
+        "difficulty": "简单",
+        "time": 8,
+        "ingredients": [
+            {
+                "name": "洋葱",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "食用油",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡蛋炒熟，洋葱大火炒香，混入鸡蛋同炒，加盐即可。"
+    },
+    {
+        "name": "凉拌黄瓜",
+        "difficulty": "简单",
+        "time": 5,
+        "ingredients": [
+            {
+                "name": "黄瓜",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            },
+            {
+                "name": "辣椒油",
+                "type": "side"
+            },
+            {
+                "name": "芝麻油",
+                "type": "side"
+            }
+        ],
+        "instructions": "黄瓜拍碎切段，加入蒜末和所有调料拌匀即可。"
+    },
+    {
+        "name": "芹菜炒香干",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "芹菜",
+                "type": "main"
+            },
+            {
+                "name": "香干",
+                "type": "main"
+            },
+            {
+                "name": "红椒",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            }
+        ],
+        "instructions": "香干切条略煎，加入芹菜段大火翻炒断生，调味出锅。"
+    },
+    {
+        "name": "虾仁蒸蛋",
+        "difficulty": "简单",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "虾仁",
+                "type": "main"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "温水",
+                "type": "side"
+            }
+        ],
+        "instructions": "蛋液加温水打匀过滤，蒸至半凝固时放入虾仁继续蒸熟，淋香油生抽。"
+    },
+    {
+        "name": "葱爆羊肉",
+        "difficulty": "中等",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "羊肉卷",
+                "type": "main"
+            },
+            {
+                "name": "大葱",
+                "type": "main"
+            },
+            {
+                "name": "洋葱",
+                "type": "side"
+            },
+            {
+                "name": "孜然粉",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            }
+        ],
+        "instructions": "大火热油，下羊肉卷快速滑散，放入大量葱段爆香，调味快炒出锅。"
+    },
+    {
+        "name": "香煎豆腐",
+        "difficulty": "简单",
+        "time": 12,
+        "ingredients": [
+            {
+                "name": "老豆腐",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "蒜蓉辣酱",
+                "type": "side"
+            },
+            {
+                "name": "芝麻",
+                "type": "side"
+            }
+        ],
+        "instructions": "豆腐切块裹蛋液，煎至两面金黄，刷酱撒葱花芝麻。"
+    },
+    {
+        "name": "番茄牛腩",
+        "difficulty": "困难",
+        "time": 90,
+        "ingredients": [
+            {
+                "name": "牛腩",
+                "type": "main"
+            },
+            {
+                "name": "西红柿",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "番茄酱",
+                "type": "side"
+            },
+            {
+                "name": "香叶",
+                "type": "side"
+            }
+        ],
+        "instructions": "牛腩焯水，西红柿炒化，加入牛肉和开水慢炖1.5小时。"
+    },
+    {
+        "name": "红烧茄子",
+        "difficulty": "中等",
+        "time": 18,
+        "ingredients": [
+            {
+                "name": "茄子",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "白糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "茄子切滚刀块撒盐杀水，挤干后煎软，加调料红烧入味。"
+    },
+    {
+        "name": "青椒炒蛋",
+        "difficulty": "简单",
+        "time": 8,
+        "ingredients": [
+            {
+                "name": "青椒",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡蛋炒熟，青椒炒至断生，混合翻炒加盐。"
+    },
+    {
+        "name": "咖喱鸡肉饭",
+        "difficulty": "简单",
+        "time": 25,
+        "ingredients": [
+            {
+                "name": "鸡胸肉",
+                "type": "main"
+            },
+            {
+                "name": "土豆",
+                "type": "main"
+            },
+            {
+                "name": "胡萝卜",
+                "type": "main"
+            },
+            {
+                "name": "洋葱",
+                "type": "side"
+            },
+            {
+                "name": "咖喱块",
+                "type": "side"
+            }
+        ],
+        "instructions": "食材切块炒香，加水煮软土豆胡萝卜，关火放入咖喱块融化，开火收浓。"
+    },
+    {
+        "name": "黑椒牛柳",
+        "difficulty": "中等",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "牛里脊",
+                "type": "main"
+            },
+            {
+                "name": "洋葱",
+                "type": "side"
+            },
+            {
+                "name": "青椒",
+                "type": "side"
+            },
+            {
+                "name": "黑胡椒酱",
+                "type": "side"
+            },
+            {
+                "name": "黄油",
+                "type": "side"
+            }
+        ],
+        "instructions": "牛肉逆纹切条腌制，滑熟备用；炒香配菜，汇入牛肉和黑胡椒酱。"
+    },
+    {
+        "name": "蚝油生菜",
+        "difficulty": "简单",
+        "time": 5,
+        "ingredients": [
+            {
+                "name": "生菜",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "蚝油",
+                "type": "side"
+            },
+            {
+                "name": "淀粉",
+                "type": "side"
+            },
+            {
+                "name": "白糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "生菜焯水10秒捞出沥干，锅中爆香蒜末加蚝油勾芡，淋在生菜上。"
+    },
+    {
+        "name": "干煸四季豆",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "四季豆",
+                "type": "main"
+            },
+            {
+                "name": "猪肉沫",
+                "type": "main"
+            },
+            {
+                "name": "干辣椒",
+                "type": "side"
+            },
+            {
+                "name": "花椒",
+                "type": "side"
+            },
+            {
+                "name": "芽菜",
+                "type": "side"
+            }
+        ],
+        "instructions": "四季豆油炸至表皮起皱，倒出油，留底油炒肉沫芽菜辣椒，倒入四季豆干煸。"
+    },
+    {
+        "name": "木耳炒肉",
+        "difficulty": "简单",
+        "time": 12,
+        "ingredients": [
+            {
+                "name": "猪肉",
+                "type": "main"
+            },
+            {
+                "name": "木耳",
+                "type": "main"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            }
+        ],
+        "instructions": "木耳泡发，肉片滑炒，放入木耳大火翻炒，调味即可。"
+    },
+    {
+        "name": "意大利肉酱面",
+        "difficulty": "中等",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "意大利面",
+                "type": "main"
+            },
+            {
+                "name": "牛肉沫",
+                "type": "main"
+            },
+            {
+                "name": "西红柿",
+                "type": "main"
+            },
+            {
+                "name": "洋葱",
+                "type": "side"
+            },
+            {
+                "name": "番茄酱",
+                "type": "side"
+            }
+        ],
+        "instructions": "煮意面备用；洋葱肉沫炒香，加西红柿熬成浓酱，淋在面上。"
+    },
+    {
+        "name": "清炒虾仁",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "虾仁",
+                "type": "main"
+            },
+            {
+                "name": "黄瓜",
+                "type": "side"
+            },
+            {
+                "name": "胡萝卜",
+                "type": "side"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "蛋清",
+                "type": "side"
+            }
+        ],
+        "instructions": "虾仁上浆滑油变色，倒入配菜丁快速翻炒调盐。"
+    },
+    {
+        "name": "白灼虾",
+        "difficulty": "简单",
+        "time": 5,
+        "ingredients": [
+            {
+                "name": "基围虾",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "料酒",
+                "type": "side"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            }
+        ],
+        "instructions": "水开加姜葱料酒，下入虾煮至变红弯曲立刻捞出，蘸料汁吃。"
+    },
+    {
+        "name": "红枣银耳汤",
+        "difficulty": "简单",
+        "time": 60,
+        "ingredients": [
+            {
+                "name": "银耳",
+                "type": "main"
+            },
+            {
+                "name": "红枣",
+                "type": "side"
+            },
+            {
+                "name": "枸杞",
+                "type": "side"
+            },
+            {
+                "name": "冰糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "银耳泡发撕小块，加水煮出胶质，放入红枣枸杞冰糖再煮10分钟。"
+    },
+    {
+        "name": "煎牛排",
+        "difficulty": "中等",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "牛排",
+                "type": "main"
+            },
+            {
+                "name": "海盐",
+                "type": "side"
+            },
+            {
+                "name": "黑胡椒",
+                "type": "side"
+            },
+            {
+                "name": "大蒜",
+                "type": "side"
+            },
+            {
+                "name": "迷迭香",
+                "type": "side"
+            }
+        ],
+        "instructions": "牛排室温回温擦干，大火高温煎封表面，静置5分钟后切开。"
+    },
+    {
+        "name": "炒土豆片",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "土豆",
+                "type": "main"
+            },
+            {
+                "name": "青椒",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            }
+        ],
+        "instructions": "土豆切片过水去淀粉，爆香蒜末，下土豆片炒至透明，加青椒调味。"
+    },
+    {
+        "name": "香菇滑鸡",
+        "difficulty": "中等",
+        "time": 25,
+        "ingredients": [
+            {
+                "name": "鸡腿肉",
+                "type": "main"
+            },
+            {
+                "name": "干香菇",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "蚝油",
+                "type": "side"
+            }
+        ],
+        "instructions": "香菇泡发，鸡肉切块腌制。爆香姜片炒鸡肉，加入香菇和水焖煮入味。"
+    },
+    {
+        "name": "皮蛋瘦肉粥",
+        "difficulty": "中等",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "大米",
+                "type": "main"
+            },
+            {
+                "name": "瘦肉",
+                "type": "main"
+            },
+            {
+                "name": "皮蛋",
+                "type": "main"
+            },
+            {
+                "name": "姜丝",
+                "type": "side"
+            },
+            {
+                "name": "葱花",
+                "type": "side"
+            }
+        ],
+        "instructions": "大米煮开花，瘦肉切丝腌制，皮蛋切丁。粥底浓稠后加入肉丝皮蛋略煮。"
+    },
+    {
+        "name": "蒜苔炒肉",
+        "difficulty": "简单",
+        "time": 12,
+        "ingredients": [
+            {
+                "name": "蒜苔",
+                "type": "main"
+            },
+            {
+                "name": "猪肉",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "甜面酱",
+                "type": "side"
+            }
+        ],
+        "instructions": "肉丝炒变色，加甜面酱炒香，倒入蒜苔段大火快炒至断生。"
+    },
+    {
+        "name": "鲫鱼豆腐汤",
+        "difficulty": "中等",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "鲫鱼",
+                "type": "main"
+            },
+            {
+                "name": "豆腐",
+                "type": "side"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "鲫鱼煎至两面金黄，加开水大火煮至汤白，放入豆腐煮10分钟，撒葱花。"
+    },
+    {
+        "name": "韭菜炒鸡蛋",
+        "difficulty": "简单",
+        "time": 8,
+        "ingredients": [
+            {
+                "name": "韭菜",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "食用油",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡蛋炒块盛出，韭菜大火快炒几秒，回锅鸡蛋加盐拌匀。"
+    },
+    {
+        "name": "红烧鱼块",
+        "difficulty": "困难",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "草鱼",
+                "type": "main"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "红烧酱油",
+                "type": "side"
+            }
+        ],
+        "instructions": "鱼块腌制后炸至金黄。另起锅爆香调料，加水和鱼块焖煮收汁。"
+    },
+    {
+        "name": "蔬菜沙拉",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "生菜",
+                "type": "main"
+            },
+            {
+                "name": "小番茄",
+                "type": "side"
+            },
+            {
+                "name": "黄瓜",
+                "type": "side"
+            },
+            {
+                "name": "玉米粒",
+                "type": "side"
+            },
+            {
+                "name": "沙拉酱",
+                "type": "side"
+            }
+        ],
+        "instructions": "所有蔬菜洗净切小块，沥干水分，淋上沙拉酱拌匀。"
+    },
+    {
+        "name": "冬瓜排骨汤",
+        "difficulty": "中等",
+        "time": 90,
+        "ingredients": [
+            {
+                "name": "排骨",
+                "type": "main"
+            },
+            {
+                "name": "冬瓜",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "排骨焯水后加姜片炖煮1小时，加入冬瓜块继续煮20分钟至透明。"
+    },
+    {
+        "name": "肉末茄子",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "茄子",
+                "type": "main"
+            },
+            {
+                "name": "猪肉沫",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "豆瓣酱",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            }
+        ],
+        "instructions": "茄子炸软。炒香肉沫和豆瓣酱，倒入茄子翻炒入味，撒葱花。"
+    },
+    {
+        "name": "家常豆腐",
+        "difficulty": "中等",
+        "time": 18,
+        "ingredients": [
+            {
+                "name": "豆腐",
+                "type": "main"
+            },
+            {
+                "name": "木耳",
+                "type": "side"
+            },
+            {
+                "name": "青椒",
+                "type": "side"
+            },
+            {
+                "name": "豆瓣酱",
+                "type": "side"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            }
+        ],
+        "instructions": "豆腐煎至两面金黄切三角，炒香辅料，放入豆腐烩煮。"
+    },
+    {
+        "name": "蛋炒饭",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "米饭",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "火腿肠",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡蛋打散炒熟，倒入冷饭压散炒热，加配料和盐炒匀。"
+    },
+    {
+        "name": "油焖大虾",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "对虾",
+                "type": "main"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "番茄酱",
+                "type": "side"
+            },
+            {
+                "name": "白糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "大虾剪须去线，多油煎出虾油，加调料和少许水焖煮收汁。"
+    },
+    {
+        "name": "凉拌木耳",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "木耳",
+                "type": "main"
+            },
+            {
+                "name": "洋葱",
+                "type": "side"
+            },
+            {
+                "name": "香菜",
+                "type": "side"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            },
+            {
+                "name": "辣椒油",
+                "type": "side"
+            }
+        ],
+        "instructions": "木耳泡发焯水煮熟，过冷水，加入配菜和调料汁拌匀。"
+    },
+    {
+        "name": "黄焖鸡",
+        "difficulty": "中等",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "鸡腿肉",
+                "type": "main"
+            },
+            {
+                "name": "干香菇",
+                "type": "side"
+            },
+            {
+                "name": "青椒",
+                "type": "side"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "黄焖酱汁",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡肉炒糖色，加香菇水高压锅压10分钟，最后放入青椒收汁。"
+    },
+    {
+        "name": "红薯粥",
+        "difficulty": "简单",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "大米",
+                "type": "main"
+            },
+            {
+                "name": "红薯",
+                "type": "main"
+            },
+            {
+                "name": "水",
+                "type": "side"
+            }
+        ],
+        "instructions": "大米洗净，红薯切块，放入电饭煲加水煮至红薯软糯。"
+    },
+    {
+        "name": "蒜蓉空心菜",
+        "difficulty": "简单",
+        "time": 5,
+        "ingredients": [
+            {
+                "name": "空心菜",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "猪油",
+                "type": "side"
+            }
+        ],
+        "instructions": "猪油渣爆香蒜末，下空心菜大火爆炒，软塌即出锅。"
+    },
+    {
+        "name": "小炒黄牛肉",
+        "difficulty": "中等",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "牛肉",
+                "type": "main"
+            },
+            {
+                "name": "小米椒",
+                "type": "side"
+            },
+            {
+                "name": "香菜",
+                "type": "side"
+            },
+            {
+                "name": "姜蒜",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            }
+        ],
+        "instructions": "牛肉切片腌制滑熟，爆香大量小米椒姜蒜，倒入牛肉快炒撒香菜。"
+    },
+    {
+        "name": "松仁玉米",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "玉米粒",
+                "type": "main"
+            },
+            {
+                "name": "松仁",
+                "type": "side"
+            },
+            {
+                "name": "胡萝卜丁",
+                "type": "side"
+            },
+            {
+                "name": "黄瓜丁",
+                "type": "side"
+            },
+            {
+                "name": "白糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "松仁炸黄，蔬菜丁焯水。锅留底油炒熟蔬菜，加糖，最后撒松仁。"
+    },
+    {
+        "name": "苦瓜炒蛋",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "苦瓜",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "苦瓜切片撒盐杀水去苦味，焯水后与鸡蛋液同炒。"
+    },
+    {
+        "name": "酸菜鱼",
+        "difficulty": "困难",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "鱼片",
+                "type": "main"
+            },
+            {
+                "name": "酸菜",
+                "type": "main"
+            },
+            {
+                "name": "泡椒",
+                "type": "side"
+            },
+            {
+                "name": "花椒",
+                "type": "side"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            }
+        ],
+        "instructions": "鱼骨熬汤，酸菜炒香倒入鱼汤煮开，滑入鱼片煮几十秒，淋热油。"
+    },
+    {
+        "name": "韭菜盒子",
+        "difficulty": "困难",
+        "time": 60,
+        "ingredients": [
+            {
+                "name": "面粉",
+                "type": "main"
+            },
+            {
+                "name": "韭菜",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "虾皮",
+                "type": "side"
+            },
+            {
+                "name": "香油",
+                "type": "side"
+            }
+        ],
+        "instructions": "和面醒发，韭菜鸡蛋虾皮调馅，包成半月形，平底锅烙至两面金黄。"
+    },
+    {
+        "name": "白菜炖豆腐",
+        "difficulty": "简单",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "白菜",
+                "type": "main"
+            },
+            {
+                "name": "豆腐",
+                "type": "main"
+            },
+            {
+                "name": "粉条",
+                "type": "side"
+            },
+            {
+                "name": "姜",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "冻豆腐切块，白菜切段，加水炖煮，出锅前放入粉条煮软。"
+    },
+    {
+        "name": "啤酒鸭",
+        "difficulty": "困难",
+        "time": 50,
+        "ingredients": [
+            {
+                "name": "鸭肉",
+                "type": "main"
+            },
+            {
+                "name": "啤酒",
+                "type": "main"
+            },
+            {
+                "name": "青红椒",
+                "type": "side"
+            },
+            {
+                "name": "姜蒜",
+                "type": "side"
+            },
+            {
+                "name": "八角",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸭肉焯水煸炒出油，倒啤酒没过鸭肉，焖煮40分钟收汁加配菜。"
+    },
+    {
+        "name": "蚂蚁上树",
+        "difficulty": "中等",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "粉条",
+                "type": "main"
+            },
+            {
+                "name": "猪肉沫",
+                "type": "main"
+            },
+            {
+                "name": "豆瓣酱",
+                "type": "side"
+            },
+            {
+                "name": "葱姜蒜",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            }
+        ],
+        "instructions": "粉条泡软。肉沫炒酥加酱炒红油，加水下粉条煮干水分撒葱花。"
+    },
+    {
+        "name": "香肠炒饭",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "米饭",
+                "type": "main"
+            },
+            {
+                "name": "香肠",
+                "type": "main"
+            },
+            {
+                "name": "青豆",
+                "type": "side"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "side"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            }
+        ],
+        "instructions": "香肠切片煸出油脂，下蛋液炒散，倒入米饭青豆翻炒均匀。"
+    },
+    {
+        "name": "南瓜粥",
+        "difficulty": "简单",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "南瓜",
+                "type": "main"
+            },
+            {
+                "name": "大米",
+                "type": "main"
+            },
+            {
+                "name": "糯米粉",
+                "type": "side"
+            },
+            {
+                "name": "冰糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "南瓜蒸熟压泥，加水和大米煮粥，可加糯米圆子增加口感。"
+    },
+    {
+        "name": "三杯鸡",
+        "difficulty": "中等",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "鸡腿",
+                "type": "main"
+            },
+            {
+                "name": "一杯麻油",
+                "type": "side"
+            },
+            {
+                "name": "一杯米酒",
+                "type": "side"
+            },
+            {
+                "name": "一杯酱油",
+                "type": "side"
+            },
+            {
+                "name": "九层塔",
+                "type": "side"
+            }
+        ],
+        "instructions": "麻油煸姜，下鸡块炒白，倒入三杯调料焖煮收汁，放九层塔。"
+    },
+    {
+        "name": "孜然土豆片",
+        "difficulty": "简单",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "土豆",
+                "type": "main"
+            },
+            {
+                "name": "洋葱",
+                "type": "side"
+            },
+            {
+                "name": "孜然粉",
+                "type": "side"
+            },
+            {
+                "name": "辣椒粉",
+                "type": "side"
+            },
+            {
+                "name": "芝麻",
+                "type": "side"
+            }
+        ],
+        "instructions": "土豆切片煎至焦黄，倒出多余油，撒入大量孜然辣椒粉洋葱碎炒匀。"
+    },
+    {
+        "name": "紫菜蛋花汤",
+        "difficulty": "简单",
+        "time": 5,
+        "ingredients": [
+            {
+                "name": "紫菜",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "虾皮",
+                "type": "side"
+            },
+            {
+                "name": "葱花",
+                "type": "side"
+            },
+            {
+                "name": "香油",
+                "type": "side"
+            }
+        ],
+        "instructions": "水烧开，放入紫菜虾皮，淋入蛋液成花，关火淋香油撒葱花。"
+    },
+    {
+        "name": "蒸水蛋",
+        "difficulty": "中等",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "温水",
+                "type": "main"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "香油",
+                "type": "side"
+            },
+            {
+                "name": "葱花",
+                "type": "side"
+            }
+        ],
+        "instructions": "蛋水比例1:1.5搅匀过筛，盖保鲜膜蒸10分钟，焖2分钟，淋料汁。"
+    },
+    {
+        "name": "椒盐虾",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "大虾",
+                "type": "main"
+            },
+            {
+                "name": "青红椒粒",
+                "type": "side"
+            },
+            {
+                "name": "洋葱粒",
+                "type": "side"
+            },
+            {
+                "name": "椒盐粉",
+                "type": "side"
+            },
+            {
+                "name": "淀粉",
+                "type": "side"
+            }
+        ],
+        "instructions": "虾开背拍淀粉炸酥，锅底油炒香配菜粒，倒入虾撒椒盐翻匀。"
+    },
+    {
+        "name": "土豆泥",
+        "difficulty": "简单",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "土豆",
+                "type": "main"
+            },
+            {
+                "name": "牛奶",
+                "type": "side"
+            },
+            {
+                "name": "黑胡椒",
+                "type": "side"
+            },
+            {
+                "name": "黄油",
+                "type": "side"
+            },
+            {
+                "name": "蚝油",
+                "type": "side"
+            }
+        ],
+        "instructions": "土豆蒸熟压泥加牛奶黄油拌匀。蚝油淀粉水煮成汁淋在上面。"
+    },
+    {
+        "name": "辣子鸡丁",
+        "difficulty": "中等",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "鸡胸肉",
+                "type": "main"
+            },
+            {
+                "name": "干辣椒",
+                "type": "main"
+            },
+            {
+                "name": "花椒",
+                "type": "side"
+            },
+            {
+                "name": "葱姜蒜",
+                "type": "side"
+            },
+            {
+                "name": "芝麻",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡丁炸干水分。留底油爆香大量花椒辣椒，倒入鸡丁翻炒均匀。"
+    },
+    {
+        "name": "西芹百合",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "西芹",
+                "type": "main"
+            },
+            {
+                "name": "百合",
+                "type": "main"
+            },
+            {
+                "name": "腰果",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "水淀粉",
+                "type": "side"
+            }
+        ],
+        "instructions": "西芹百合焯水，腰果炸熟。热锅快炒西芹百合，勾薄芡，撒腰果。"
+    },
+    {
+        "name": "玉米排骨汤",
+        "difficulty": "中等",
+        "time": 90,
+        "ingredients": [
+            {
+                "name": "排骨",
+                "type": "main"
+            },
+            {
+                "name": "玉米",
+                "type": "main"
+            },
+            {
+                "name": "胡萝卜",
+                "type": "main"
+            },
+            {
+                "name": "姜片",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "排骨焯水，所有食材放入汤锅，大火烧开转小火炖1.5小时。"
+    },
+    {
+        "name": "洋葱圈",
+        "difficulty": "简单",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "洋葱",
+                "type": "main"
+            },
+            {
+                "name": "淀粉",
+                "type": "side"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "side"
+            },
+            {
+                "name": "面包糠",
+                "type": "side"
+            },
+            {
+                "name": "油",
+                "type": "side"
+            }
+        ],
+        "instructions": "洋葱切圈，依次裹淀粉、蛋液、面包糠，油炸至金黄酥脆。"
+    },
+    {
+        "name": "炒面",
+        "difficulty": "简单",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "面条",
+                "type": "main"
+            },
+            {
+                "name": "包菜丝",
+                "type": "side"
+            },
+            {
+                "name": "火腿",
+                "type": "side"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "side"
+            },
+            {
+                "name": "老抽",
+                "type": "side"
+            }
+        ],
+        "instructions": "面条煮8分熟捞出拌油。炒配菜，下入面条加酱油大火快炒。"
+    },
+    {
+        "name": "水煮肉片",
+        "difficulty": "困难",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "猪里脊",
+                "type": "main"
+            },
+            {
+                "name": "豆芽",
+                "type": "main"
+            },
+            {
+                "name": "白菜",
+                "type": "main"
+            },
+            {
+                "name": "豆瓣酱",
+                "type": "side"
+            },
+            {
+                "name": "干辣椒面",
+                "type": "side"
+            }
+        ],
+        "instructions": "蔬菜焯水铺底。煮红汤滑入肉片，倒在菜上，顶上撒蒜辣椒面泼热油。"
+    },
+    {
+        "name": "清炒藕片",
+        "difficulty": "简单",
+        "time": 8,
+        "ingredients": [
+            {
+                "name": "莲藕",
+                "type": "main"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "白醋",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "红椒",
+                "type": "side"
+            }
+        ],
+        "instructions": "莲藕切片泡水去淀粉。热锅快炒，烹入白醋保持脆白。"
+    },
+    {
+        "name": "青椒酿肉",
+        "difficulty": "困难",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "青椒",
+                "type": "main"
+            },
+            {
+                "name": "猪肉馅",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "淀粉",
+                "type": "side"
+            }
+        ],
+        "instructions": "肉馅塞入去蒂青椒中，煎至青椒表皮起皱虎皮状，加酱汁焖熟。"
+    },
+    {
+        "name": "番茄火锅",
+        "difficulty": "简单",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "番茄火锅底料",
+                "type": "main"
+            },
+            {
+                "name": "各类蔬菜",
+                "type": "main"
+            },
+            {
+                "name": "肥牛",
+                "type": "main"
+            },
+            {
+                "name": "丸子",
+                "type": "side"
+            }
+        ],
+        "instructions": "超市买底料加水煮开，涮你爱吃的一切。"
+    },
+    {
+        "name": "葱油拌面",
+        "difficulty": "简单",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "面条",
+                "type": "main"
+            },
+            {
+                "name": "小葱",
+                "type": "main"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "老抽",
+                "type": "side"
+            },
+            {
+                "name": "糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "小葱炸至焦黄制成葱油，倒入生抽老抽糖煮开，拌入煮好的面条。"
+    },
+    {
+        "name": "培根金针菇卷",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "培根",
+                "type": "main"
+            },
+            {
+                "name": "金针菇",
+                "type": "main"
+            },
+            {
+                "name": "黑胡椒",
+                "type": "side"
+            },
+            {
+                "name": "牙签",
+                "type": "side"
+            }
+        ],
+        "instructions": "培根卷住一小把金针菇用牙签固定，煎至培根焦黄金针菇熟透。"
+    },
+    {
+        "name": "酸汤肥牛",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "肥牛",
+                "type": "main"
+            },
+            {
+                "name": "黄灯笼椒酱",
+                "type": "main"
+            },
+            {
+                "name": "金针菇",
+                "type": "side"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "白醋",
+                "type": "side"
+            }
+        ],
+        "instructions": "爆香黄椒酱加水煮开，滤渣，煮熟金针菇捞出，滑入肥牛煮熟淋醋。"
+    },
+    {
+        "name": "丝瓜蛋汤",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "丝瓜",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "丝瓜切滚刀块炒软，加水烧开，淋入蛋液，点香油。"
+    },
+    {
+        "name": "炸酱面",
+        "difficulty": "中等",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "手擀面",
+                "type": "main"
+            },
+            {
+                "name": "五花肉丁",
+                "type": "main"
+            },
+            {
+                "name": "干黄酱",
+                "type": "main"
+            },
+            {
+                "name": "甜面酱",
+                "type": "side"
+            },
+            {
+                "name": "黄瓜丝",
+                "type": "side"
+            }
+        ],
+        "instructions": "肉丁煸出油，下入混合酱慢炸至油酱分离，浇在面上配菜码。"
+    },
+    {
+        "name": "口水鸡",
+        "difficulty": "困难",
+        "time": 40,
+        "ingredients": [
+            {
+                "name": "鸡腿",
+                "type": "main"
+            },
+            {
+                "name": "花生碎",
+                "type": "side"
+            },
+            {
+                "name": "辣椒油",
+                "type": "side"
+            },
+            {
+                "name": "花椒油",
+                "type": "side"
+            },
+            {
+                "name": "芝麻",
+                "type": "side"
+            }
+        ],
+        "instructions": "鸡腿煮熟冰镇切块，淋上调好的红油味汁，撒花生芝麻。"
+    },
+    {
+        "name": "虎皮青椒",
+        "difficulty": "简单",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "青椒",
+                "type": "main"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            },
+            {
+                "name": "白糖",
+                "type": "side"
+            }
+        ],
+        "instructions": "整颗青椒大火煎压至表面焦黄起皮，倒入味汁焖煮入味。"
+    },
+    {
+        "name": "香辣虾",
+        "difficulty": "中等",
+        "time": 25,
+        "ingredients": [
+            {
+                "name": "大虾",
+                "type": "main"
+            },
+            {
+                "name": "干辣椒",
+                "type": "side"
+            },
+            {
+                "name": "芹菜",
+                "type": "side"
+            },
+            {
+                "name": "麻辣火锅底料",
+                "type": "side"
+            },
+            {
+                "name": "白芝麻",
+                "type": "side"
+            }
+        ],
+        "instructions": "虾过油。炒香底料，放入虾和配菜段快速翻炒裹上红油。"
+    },
+    {
+        "name": "平菇炒蛋",
+        "difficulty": "简单",
+        "time": 10,
+        "ingredients": [
+            {
+                "name": "平菇",
+                "type": "main"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "main"
+            },
+            {
+                "name": "葱",
+                "type": "side"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            },
+            {
+                "name": "耗油",
+                "type": "side"
+            }
+        ],
+        "instructions": "平菇撕条焯水挤干。鸡蛋炒熟。锅炒平菇加耗油，混入鸡蛋撒葱。"
+    },
+    {
+        "name": "干锅花菜",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "有机花菜",
+                "type": "main"
+            },
+            {
+                "name": "五花肉片",
+                "type": "main"
+            },
+            {
+                "name": "干辣椒",
+                "type": "side"
+            },
+            {
+                "name": "蒜",
+                "type": "side"
+            },
+            {
+                "name": "酱油",
+                "type": "side"
+            }
+        ],
+        "instructions": "花菜过油断生。五花肉煸油，下辅料和花菜翻炒，酒精炉加热更好。"
+    },
+    {
+        "name": "红酒炖梨",
+        "difficulty": "简单",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "雪梨",
+                "type": "main"
+            },
+            {
+                "name": "红酒",
+                "type": "main"
+            },
+            {
+                "name": "冰糖",
+                "type": "side"
+            },
+            {
+                "name": "肉桂棒",
+                "type": "side"
+            }
+        ],
+        "instructions": "梨去皮整个放入红酒中，加冰糖肉桂，小火煮至梨身通红。"
+    },
+    {
+        "name": "凉拌皮蛋",
+        "difficulty": "简单",
+        "time": 5,
+        "ingredients": [
+            {
+                "name": "皮蛋",
+                "type": "main"
+            },
+            {
+                "name": "姜末",
+                "type": "main"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            },
+            {
+                "name": "生抽",
+                "type": "side"
+            },
+            {
+                "name": "辣椒油",
+                "type": "side"
+            }
+        ],
+        "instructions": "皮蛋切瓣摆盘，淋上混合了姜末和调料的酱汁。"
+    },
+    {
+        "name": "可乐饼",
+        "difficulty": "中等",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "土豆",
+                "type": "main"
+            },
+            {
+                "name": "肉沫",
+                "type": "main"
+            },
+            {
+                "name": "洋葱",
+                "type": "side"
+            },
+            {
+                "name": "面粉",
+                "type": "side"
+            },
+            {
+                "name": "面包糠",
+                "type": "side"
+            }
+        ],
+        "instructions": "炒熟肉沫洋葱混入土豆泥，整形成圆饼，裹粉蛋液面包糠油炸。"
+    },
+    {
+        "name": "酸辣汤",
+        "difficulty": "中等",
+        "time": 20,
+        "ingredients": [
+            {
+                "name": "豆腐丝",
+                "type": "main"
+            },
+            {
+                "name": "木耳丝",
+                "type": "side"
+            },
+            {
+                "name": "鸡蛋",
+                "type": "side"
+            },
+            {
+                "name": "胡椒粉",
+                "type": "side"
+            },
+            {
+                "name": "醋",
+                "type": "side"
+            }
+        ],
+        "instructions": "高汤煮开食材，勾芡，关火前撒大量白胡椒粉和醋，淋蛋花。"
+    },
+    {
+        "name": "糖醋里脊",
+        "difficulty": "困难",
+        "time": 30,
+        "ingredients": [
+            {
+                "name": "猪里脊",
+                "type": "main"
+            },
+            {
+                "name": "淀粉",
+                "type": "side"
+            },
+            {
+                "name": "番茄酱",
+                "type": "side"
+            },
+            {
+                "name": "白糖",
+                "type": "side"
+            },
+            {
+                "name": "白醋",
+                "type": "side"
+            }
+        ],
+        "instructions": "肉条裹面糊二遍复炸至酥脆，锅中熬糖醋汁，倒入肉条快速翻匀。"
+    },
+    {
+        "name": "西兰花虾仁菌菇汤",
+        "difficulty": "简单",
+        "time": 15,
+        "ingredients": [
+            {
+                "name": "西兰花",
+                "type": "main"
+            },
+            {
+                "name": "虾仁",
+                "type": "main"
+            },
+            {
+                "name": "海鲜菇",
+                "type": "main"
+            },
+            {
+                "name": "盐",
+                "type": "side"
+            }
+        ],
+        "instructions": "虾仁菌菇略炒加水煮开，放入西兰花煮熟，清淡调味。"
     }
 ]
