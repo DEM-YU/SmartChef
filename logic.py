@@ -46,14 +46,21 @@ def get_recommendations(user_ingredients):
     return can_cook, missing_one
 
 def call_ai_chef(ingredients):
-    """这是 app.py 正在找的核心函数"""
     if not api_key:
-        return "⚠️ 未检测到 API Key，请在 Streamlit Secrets 中配置。"
-
-    try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
-        prompt = f"我有这些食材：{', '.join(ingredients)}。请给我一个创意菜名和简单做法。"
-        response = model.generate_content(prompt)
-        return response.text
-    except Exception as e:
-        return f"❌ AI 暂时无法出菜: {str(e)}"
+        return "⚠️ Secrets 中未配置 API Key"
+    
+    # 定义模型尝试列表，从最新到最稳
+    model_names = ['gemini-1.5-flash', 'gemini-1.5-pro', 'gemini-pro']
+    
+    prompt = f"你是一位大厨。我有这些食材：{', '.join(ingredients)}。请给我一个创意菜名和简单做法。"
+    
+    for m_name in model_names:
+        try:
+            model = genai.GenerativeModel(m_name)
+            response = model.generate_content(prompt)
+            return response.text
+        except Exception as e:
+            # 如果当前模型报错，继续尝试下一个
+            continue
+            
+    return "❌ 尝试了所有模型均失败，请检查 API Key 权限或稍后再试。"
