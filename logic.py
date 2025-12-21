@@ -1,5 +1,6 @@
 import json
 import os
+import random  # Added for AI simulation
 
 def load_recipes():
     """
@@ -18,6 +19,40 @@ def load_recipes():
     except json.JSONDecodeError:
         print("Error: recipes.json is not valid JSON.")
         return []
+
+def ask_ai_chef(ingredients):
+    """
+    Simulate an AI Chef that creates a creative recipe based on provided ingredients.
+    This acts as a fallback when local matches are insufficient.
+    
+    Prompt Concept: "You are a senior chef... [List]"
+    """
+    # In a real scenario, this would call an API (e.g., OpenAI, Gemini).
+    # Here we simulate the response structure.
+    
+    # Constructing a 'creative' name
+    main_ing = ingredients[0] if ingredients else "神秘食材"
+    creative_names = [
+        f"五星级{main_ing}特调",
+        f"甚至不用火的{main_ing}料理",
+        f"AI大厨的{main_ing}狂想曲",
+        f"未来派{main_ing}盖饭"
+    ]
+    
+    recipe_name = random.choice(creative_names)
+    
+    # Return a recipe object matching recipes.json structure
+    return {
+        "name": recipe_name,
+        "category": "AI 创意菜",
+        "difficulty": "未知",
+        "time": "??",
+        "ingredients": [{"name": ing, "tag": "AI配料"} for ing in ingredients],
+        "missing_seasoning": [],
+        "missing_critical": [], 
+        "is_ai_generated": True,
+        "description": f"（AI模拟响应）这里是为您定制的{recipe_name}烹饪逻辑：\n1. 准备好{', '.join(ingredients)}\n2. 发挥你的想象力，大火爆炒！\n3. 出锅！"
+    }
 
 def get_recommendations(user_ingredients, user_categories, recipes_data):
     """
@@ -74,6 +109,7 @@ def get_recommendations(user_ingredients, user_categories, recipes_data):
         recipe_result['missing_seasoning'] = missing_seasoning
         recipe_result['missing_critical'] = missing_critical
         
+    
         if len(missing_critical) == 0:
             # Full match (seasonings optional)
             can_cook.append(recipe_result)
@@ -81,5 +117,11 @@ def get_recommendations(user_ingredients, user_categories, recipes_data):
             # Partial match (missing 1 main ingredient)
             recipe_result['missing_ingredient'] = missing_critical[0] 
             missing_one.append(recipe_result)
+            
+    # --- AI Implementation ---
+    # If matches are fewer than 3, call AI Chef
+    if len(can_cook) < 3 and normalized_user_ingredients:
+        ai_recipe = ask_ai_chef(normalized_user_ingredients)
+        can_cook.append(ai_recipe)
             
     return can_cook, missing_one
